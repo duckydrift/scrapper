@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fuisql-server",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd /Users/diprish/Downloads/fuisql-server && npm start"],
+      "port": 3000
+    }
+  ]
+}

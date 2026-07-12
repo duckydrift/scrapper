@@ -6,10 +6,13 @@ import tempfile
 import time
 from urllib.parse import urljoin
 
-BASE_URL = "https://docs.oracle.com/en/cloud/saas/financials/26b/oedmf/"
-TOC_URL = "https://docs.oracle.com/en/cloud/saas/financials/26b/oedmf/toc.htm"
+BASE_URL = "https://docs.oracle.com/en/cloud/saas/project-management/26c/oedpp/"
+TOC_URL = "https://docs.oracle.com/en/cloud/saas/project-management/26c/oedpp/toc.htm"
 
-OUTPUT_FILE = "oracle_data.json"
+# Separate output so we never clobber / mix into the financials dataset
+# (oracle_data.json) that build_erd_data.py consumes.
+OUTPUT_FILE = "oracle_data_ppm.json"
+RELATIONSHIPS_FILE = "relationships_ppm.json"
 
 
 def atomic_write_json(path, obj):
@@ -72,13 +75,18 @@ def parse_columns(soup):
 
     columns = []
     if not table:
-        # Fallback: view pages list columns one-per-line in a single "Name" cell.
+        # Fallback: view pages list columns in a single "Name" cell, one per
+        # <p> element. get_text(strip=True) would concatenate them into one
+        # blob, so pull each cell's text with a newline separator and split.
         for t in soup.find_all('table'):
             hs = header_set(t)
             if len(hs) == 1 and hs[0] == 'name':
-                for row in data_rows(t):
-                    for line in (l.strip() for l in row[0].split('\n') if l.strip()):
-                        columns.append({"name": line, "dataType": "View Column", "nullable": "Unknown"})
+                for tr in t.find_all('tr'):
+                    if tr.find('th'):
+                        continue
+                    for td in tr.find_all('td'):
+                        for line in (l.strip() for l in td.get_text('\n', strip=True).split('\n') if l.strip()):
+                            columns.append({"name": line, "dataType": "View Column", "nullable": "Unknown"})
                 break
         return columns
 
@@ -162,6 +170,26 @@ def get_table_name(soup):
 
 
 def get_description(soup):
+    # The description lives inside <div class="body">, either as
+    # <p class="shortdesc"> or the first non-empty <p class="p"> before the
+    # "Details" <section>. The bare "first <p> after <h1>" is empty here.
+    body = soup.find('div', class_='body')
+    if body:
+        short = body.find('p', class_='shortdesc')
+        if short and short.get_text(strip=True):
+            return short.get_text(strip=True)
+        for p in body.find_all('p', recursive=False):
+            text = p.get_text(strip=True)
+            if text:
+                return text
+        # Some pages nest the intro paragraph; take the first non-empty <p>
+        # that is not inside a <section>/<table>/<ul>.
+        for p in body.find_all('p'):
+            if p.find_parent(['section', 'table', 'ul']):
+                continue
+            text = p.get_text(strip=True)
+            if text:
+                return text
     h1 = soup.find('h1')
     if h1:
         p = h1.find_next_sibling('p') or h1.find_next('p')
@@ -251,10 +279,10 @@ def scrape_oracle_docs():
             if key not in seen and r["fromTable"] in data and r["toTable"] in data:
                 seen.add(key)
                 edges.append(r)
-    atomic_write_json("relationships.json", edges)
+    atomic_write_json(RELATIONSHIPS_FILE, edges)
 
     print(f"\nScraping complete. {len(data)} tables -> {OUTPUT_FILE}")
-    print(f"{len(edges)} unique relationships -> relationships.json")
+    print(f"{len(edges)} unique relationships -> {RELATIONSHIPS_FILE}")
 
 
 if __name__ == "__main__":
