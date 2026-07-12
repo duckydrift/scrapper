@@ -1,0 +1,2642 @@
+[
+  {
+    "fromTable": "GMS_AWARD_BUDGET_PERIODS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_CERTS_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_CFDAS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_DEPARTMENT_CREDITS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_FUNDING_SOURCES_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWD_PRJ_FND_SOURCES",
+    "toTable": "GMS_AWARD_FUNDING_SOURCES_B",
+    "column": "AWARD_FUNDING_SOURCE_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_TEMPLATES_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_ERRORS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_PROJECTS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_KEYWORDS",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWD_PRJ_TSK_BRD_SCHEDULES",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_TERMS_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_REFERENCES_B",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_PERSONNEL",
+    "toTable": "GMS_AWARD_HEADERS_B",
+    "column": "AWARD_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_KEYWORDS",
+    "toTable": "GMS_AWARD_PROJECTS",
+    "column": "AWD_PROJECT_LNK_ID"
+  },
+  {
+    "fromTable": "GMS_AWD_PRJ_TSK_BRD_SCHEDULES",
+    "toTable": "GMS_AWARD_PROJECTS",
+    "column": "AWD_PROJECT_LNK_ID"
+  },
+  {
+    "fromTable": "GMS_AWARD_REFERENCES_B",
+    "toTable": "GMS_AWARD_PROJECTS",
+    "column": "AWD_PROJECT_LNK_ID"
+  },
+  {
+    "fromTable": "GMS_AWD_PRJ_FND_SOURCES",
+    "toTable": "GMS_AWARD_PROJECTS",
+    "column": "AWD_PROJ_LINKAGE_ID"
+  },
+  {
+    "fromTable": "GMS_INSTITUTION_CERTS_B",
+    "toTable": "GMS_CERTIFICATIONS_B",
+    "column": "CERTIFICATION_ID"
+  },
+  {
+    "fromTable": "GMS_FFR_ATTACHMENTS",
+    "toTable": "GMS_FFR_HEADER",
+    "column": "HEADER_ID"
+  },
+  {
+    "fromTable": "GMS_FFR_INDIRECT_EXPENSES",
+    "toTable": "GMS_FFR_HEADER",
+    "column": "HEADER_ID"
+  },
+  {
+    "fromTable": "GMS_INSTITUTIONS_B",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "REPORTS_TO"
+  },
+  {
+    "fromTable": "GMS_INSTITUTION_CERTS_B",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "INSTITUTION_ID"
+  },
+  {
+    "fromTable": "GMS_INSTITUTION_LOCATIONS",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "INSTITUTION_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_AUDIT_TYPES",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "INSTITUTION_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_REFERENCES_B",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "INSTITUTION_ID"
+  },
+  {
+    "fromTable": "GMS_INSTITUTION_CONTACTS",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "INSTITUTION_ID"
+  },
+  {
+    "fromTable": "PJB_SF270_REPORT_HISTORY",
+    "toTable": "GMS_INSTITUTIONS_B",
+    "column": "RECIPIENT_INSTITUTION_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_CONTACT_TYPES",
+    "toTable": "GMS_INSTITUTION_CONTACTS",
+    "column": "INSTN_CONTACT_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_AUDIT_ALERTS_B",
+    "toTable": "GMS_INSTN_AUDIT_DETAILS_B",
+    "column": "INSTN_AUDIT_DETAIL_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_AUDIT_DETAILS_B",
+    "toTable": "GMS_INSTN_AUDIT_TYPES",
+    "column": "INSTN_AUDIT_TYPE_ID"
+  },
+  {
+    "fromTable": "GMS_INSTN_REFERENCES_B",
+    "toTable": "GMS_REFERENCES_B",
+    "column": "REFERENCE_ID"
+  },
+  {
+    "fromTable": "GMS_SPONSORS_REFERENCES_B",
+    "toTable": "GMS_REFERENCES_B",
+    "column": "REFERENCE_ID"
+  },
+  {
+    "fromTable": "GMS_SPONSORS_B",
+    "toTable": "GMS_SPONSORS_B",
+    "column": "BILL_TO_SPONSOR"
+  },
+  {
+    "fromTable": "GMS_SPONSORS_REFERENCES_B",
+    "toTable": "GMS_SPONSORS_B",
+    "column": "SPONSOR_ID"
+  },
+  {
+    "fromTable": "PJB_SF270_REPORT_HISTORY",
+    "toTable": "GMS_SPONSORS_B",
+    "column": "SPONSOR_ID"
+  },
+  {
+    "fromTable": "GMS_TERMS_B",
+    "toTable": "GMS_TERM_CATEGORIES_B",
+    "column": "TERM_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJB_ACCT_SWEEPER_LOGS",
+    "toTable": "PJB_REV_DISTRIBUTIONS",
+    "column": "REV_DISTRIBUTION_ID"
+  },
+  {
+    "fromTable": "PJB_ASSIGNMENT_DETAILS",
+    "toTable": "PJB_BILLING_EXTENSIONS",
+    "column": "BILLING_EXTENSION_ID"
+  },
+  {
+    "fromTable": "PJB_ASSIGNMENT_DETAILS",
+    "toTable": "PJB_BILLING_METHODS_B",
+    "column": "BILL_METHOD_ID"
+  },
+  {
+    "fromTable": "PJB_ASSIGNMENT_DETAILS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILLING_ASSIGNMENTS",
+    "toTable": "PJB_BILLING_EXTENSIONS",
+    "column": "BILLING_EXTENSION_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_ASSIGNMENTS",
+    "toTable": "PJB_BILLING_METHODS_B",
+    "column": "BILL_METHOD_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_ASSIGNMENTS",
+    "toTable": "PJB_PROC_CONFIGURATORS_B",
+    "column": "CONFIGURATION_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_CONTROLS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_EVENTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_EVENTS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJB_ERRORS",
+    "toTable": "PJB_BILLING_EVENTS",
+    "column": "EVENT_ID"
+  },
+  {
+    "fromTable": "PJB_CALCULATION_ELEMENTS",
+    "toTable": "PJB_BILLING_EVENTS",
+    "column": "EVENT_ID"
+  },
+  {
+    "fromTable": "PJB_EVENT_ADJ_ACTIVITIES",
+    "toTable": "PJB_BILLING_EVENTS",
+    "column": "EVENT_ID"
+  },
+  {
+    "fromTable": "PJB_BILLING_METHODS_B",
+    "toTable": "PJB_BILL_TYPE_CLASSES_B",
+    "column": "BILL_TYPE_CLASS_CODE"
+  },
+  {
+    "fromTable": "PJB_BILLING_METHODS_TL",
+    "toTable": "PJB_BILLING_METHODS_B",
+    "column": "BILL_METHOD_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJB_BILLING_METHODS_B",
+    "column": "BILL_METHOD_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJB_INVOICE_FORMATS",
+    "column": "LABOR_INVOICE_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJB_INVOICE_FORMATS",
+    "column": "NL_INVOICE_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJB_INVOICE_FORMATS",
+    "column": "EVENTS_INVOICE_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJF_IND_RATE_SCH_B",
+    "column": "BURDEN_SCH_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_B",
+    "toTable": "PJF_BILLING_CYCLES_B",
+    "column": "BILLING_CYCLE_ID"
+  },
+  {
+    "fromTable": "PJB_JOB_TITLE_OVRRDS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILL_PLANS_TL",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_LABOR_MULT_OVRRDS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILL_TRXS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILL_TRXS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "REVENUE_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILL_RATE_OVRRDS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_INV_PRSNTMT_OPTIONS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_JOB_ASSGMNT_OVRRDS",
+    "toTable": "PJB_BILL_PLANS_B",
+    "column": "BILL_PLAN_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_DENORM_RATES",
+    "toTable": "PJB_BILL_RATE_OVRRDS",
+    "column": "BILL_RATE_OVERRIDE_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_BILL_TRXS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJB_ERRORS",
+    "toTable": "PJB_BILL_TRXS",
+    "column": "BILL_TRX_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_BILL_TRXS",
+    "column": "BILL_TRX_ID"
+  },
+  {
+    "fromTable": "PJB_REV_DISTRIBUTIONS",
+    "toTable": "PJB_BILL_TRXS",
+    "column": "BILL_TRX_ID"
+  },
+  {
+    "fromTable": "PJB_BILL_TYPE_CLASSES_TL",
+    "toTable": "PJB_BILL_TYPE_CLASSES_B",
+    "column": "BILL_TYPE_CLASSIFICATION_CODE"
+  },
+  {
+    "fromTable": "PJB_CNTRCT_PROJ_LINKS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJB_CNTRCT_PROJ_LINKS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJB_DENORM_RATES",
+    "toTable": "PJB_JOB_ASSGMNT_OVRRDS",
+    "column": "MAJOR_VERSION, JOB_ASSIGNMENT_OVERRIDE_ID"
+  },
+  {
+    "fromTable": "PJB_DENORM_RATES",
+    "toTable": "PJB_LABOR_MULT_OVRRDS",
+    "column": "LABOR_MULTIPLIER_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_DENORM_RATES",
+    "toTable": "PJB_JOB_TITLE_OVRRDS",
+    "column": "JOB_TITLE_OVERRIDE_ID, MAJOR_VERSION"
+  },
+  {
+    "fromTable": "PJB_ERRORS",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJB_INVOICE_FORMATS",
+    "toTable": "PJB_INV_GROUP_HEADERS",
+    "column": "INVOICE_GROUP_ID"
+  },
+  {
+    "fromTable": "PJB_INVOICE_LINES",
+    "toTable": "PJB_INVOICE_FORMATS",
+    "column": "INVOICE_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJB_INV_FORMAT_DETAILS",
+    "toTable": "PJB_INVOICE_FORMATS",
+    "column": "INVOICE_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJB_INVOICE_LINES",
+    "toTable": "PJB_INVOICE_HEADERS",
+    "column": "INVOICE_ID"
+  },
+  {
+    "fromTable": "PJB_INVOICE_LINES",
+    "toTable": "PJB_INVOICE_HEADERS",
+    "column": "CREDITED_INVOICE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_INVOICE_HEADERS",
+    "column": "INVOICE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_INVOICE_HEADERS",
+    "column": "CREDITED_INVOICE_ID"
+  },
+  {
+    "fromTable": "PJB_SF270_REPORT_HISTORY",
+    "toTable": "PJB_INVOICE_HEADERS",
+    "column": "INVOICE_ID"
+  },
+  {
+    "fromTable": "PJB_INVOICE_LINES",
+    "toTable": "PJB_INVOICE_LINES",
+    "column": "CREDITED_INVOICE_LINE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_INVOICE_LINES",
+    "column": "INVOICE_LINE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_INVOICE_LINES",
+    "column": "CREDITED_INVOICE_LINE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_FORMAT_DETAILS",
+    "toTable": "PJB_INV_GROUP_COLUMN",
+    "column": "INVOICE_GROUP_COLUMN_ID"
+  },
+  {
+    "fromTable": "PJB_INV_GROUP_COLUMN",
+    "toTable": "PJB_INV_GROUP_HEADERS",
+    "column": "INVOICE_GROUP_ID"
+  },
+  {
+    "fromTable": "PJB_INV_GRP_COL_WHR_CLS",
+    "toTable": "PJB_INV_GROUP_COLUMN",
+    "column": "INVOICE_GROUP_COLUMN_ID"
+  },
+  {
+    "fromTable": "PJB_INV_GROUP_TABLE",
+    "toTable": "PJB_INV_GROUP_COLUMN",
+    "column": "INVOICE_GROUP_COLUMN_ID"
+  },
+  {
+    "fromTable": "PJB_INV_GRP_COL_WHR_CLS",
+    "toTable": "PJB_INV_GRP_WHR_CLS",
+    "column": "INVOICE_GROUP_WHERE_CLAUSE_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJB_INV_LINE_DISTS",
+    "column": "CREDITED_DIST_ID"
+  },
+  {
+    "fromTable": "PJB_INV_LINE_DISTS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJB_PROC_CFG_FILTER_ASGNMTS",
+    "toTable": "PJB_PROC_CFG_SOURCE_ASGNMTS",
+    "column": "PROC_CFG_SOURCE_ASGNMT_ID"
+  },
+  {
+    "fromTable": "PJB_PROC_CFG_FILTER_ASGNMTS",
+    "toTable": "PJB_PROC_CFG_SOURCES",
+    "column": "PROC_CFG_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJB_PROC_CFG_FILTER_SOURCES",
+    "toTable": "PJB_PROC_CFG_SOURCES",
+    "column": "PROC_CFG_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJB_PROC_CFG_SOURCE_ASGNMTS",
+    "toTable": "PJB_PROC_CFG_SOURCES",
+    "column": "PROC_CFG_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJB_PROC_CFG_SOURCE_ASGNMTS",
+    "toTable": "PJB_PROC_CONFIGURATORS_B",
+    "column": "CONFIGURATION_ID"
+  },
+  {
+    "fromTable": "PJB_REV_DISTRIBUTIONS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_COMMITMENT_CONTROLS",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_COMMITMENT_CONTROLS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_CUSTOM_LAYOUTS_TL",
+    "toTable": "PJO_CUSTOM_LAYOUTS_B",
+    "column": "CUSTOM_LAYOUT_ID"
+  },
+  {
+    "fromTable": "PJO_ERRORS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_ERRORS",
+    "toTable": "PJO_PLAN_LINES",
+    "column": "PLAN_LINE_ID"
+  },
+  {
+    "fromTable": "PJO_ERRORS",
+    "toTable": "PJO_PLAN_LINE_DETAILS",
+    "column": "PLAN_LINE_DETAIL_ID"
+  },
+  {
+    "fromTable": "PJO_EXCEL_EXPORT_OPTIONS",
+    "toTable": "PJO_PLANNING_OPTIONS",
+    "column": "PLANNING_OPTION_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_OPTIONS",
+    "toTable": "PJO_FIN_PLAN_AMT_SETS",
+    "column": "AMOUNT_SET_ID"
+  },
+  {
+    "fromTable": "PJO_PERIODIC_XFACE",
+    "toTable": "PJO_PLANNING_ELEMENTS",
+    "column": "PLANNING_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_PERIOD_PROFILE_DTLS",
+    "toTable": "PJO_PERIOD_PROFILES_B",
+    "column": "PERIOD_PROFILE_ID"
+  },
+  {
+    "fromTable": "PJO_PERIOD_PROFILES_TL",
+    "toTable": "PJO_PERIOD_PROFILES_B",
+    "column": "PERIOD_PROFILE_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_CURRENCIES",
+    "toTable": "PJO_PLANNING_OPTIONS",
+    "column": "PLANNING_OPTION_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_ELEMENTS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_ELEMENTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_ELEMENTS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_ELEMENTS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_LINE_DETAILS",
+    "toTable": "PJO_PLANNING_ELEMENTS",
+    "column": "PLANNING_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_LINES",
+    "toTable": "PJO_PLANNING_ELEMENTS",
+    "column": "PLANNING_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_PLANNING_OPTIONS",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_XCC_SETTINGS",
+    "toTable": "PJO_PLANNING_OPTIONS",
+    "column": "PLANNING_OPTION_ID"
+  },
+  {
+    "fromTable": "PJO_XCC_PRJ_HCHY_SEED",
+    "toTable": "PJO_PLANNING_OPTIONS",
+    "column": "PJO_XCC_PRJ_HCHY_SEED_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_LINES",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_LINE_DETAILS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_TYPES_TL",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_VERSIONS_B",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_PM_PROD_CNTRL_RULES",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "FIELD_VALUE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUNS_ALL",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "BASIS_FIN_PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_TYPES_B_ST",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_TYPE_RATE_SCHS",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJO_PLAN_TYPES_B",
+    "column": "BASIS_FIN_PLAN_TYPE_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_TYPE_RATE_SCHS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "BU_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_VERSIONS_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_T",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PROJECT_PROGRESS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_H",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_WBS_HEADERS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_TARGETS",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PLAN_VERSIONS_TL",
+    "toTable": "PJO_PLAN_VERSIONS_B",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_PRICING_INTG_DEBUG",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_PROJECT_PLAN_ACTUALS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_PROJECT_PROGRESS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_PROJECT_PROGRESS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJO_PROJECT_PROGRESS",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_SPREAD_CURVES_TL",
+    "toTable": "PJO_SPREAD_CURVES_B",
+    "column": "SPREAD_CURVE_ID"
+  },
+  {
+    "fromTable": "PJO_XBS_ACCUM_F",
+    "toTable": "PJO_WBS_HEADERS",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJO_XBS_DENORM",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_XCC_CTRL_BDGT_SEGMENTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJO_XCC_CTRL_BDGT_SEGMENTS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJO_XCC_CTRL_BDGT_SEGMENTS",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJC_ACCT_SWEEPER_LOGS",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_EXCEPTIONS",
+    "toTable": "PJC_ALLOC_RUNS_ALL",
+    "column": "RUN_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_GL_LINES",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_GL_DET",
+    "toTable": "PJC_ALLOC_GL_LINES",
+    "column": "RULE_ID, LINE_NUM"
+  },
+  {
+    "fromTable": "PJC_ALLOC_MISSING_COSTS",
+    "toTable": "PJC_ALLOC_RUNS_ALL",
+    "column": "RUN_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_MISSING_COSTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_MISSING_COSTS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RESOURCES",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "TARGET_EXP_TYPE_CLASS"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "TARGET_EXP_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_RBS_HEADERS_B",
+    "column": "ALLOC_RBS_HEADER_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "OFFSET_EXP_TYPE_CLASS"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "OFFSET_EXP_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "OFFSET_PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "OFFSET_TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RULES_ALL",
+    "toTable": "PJF_RBS_HEADERS_B",
+    "column": "BASIS_RBS_HEADER_ID"
+  },
+  {
+    "fromTable": "PJC_LD_SCH_TARGET_LINES",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TARGET_LINES",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_RES_DET",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_SOURCE_LINES",
+    "toTable": "PJC_ALLOC_RULES_ALL",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJC_ALLOC_RUNS_ALL",
+    "column": "RUN_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_SOURCE_DET",
+    "toTable": "PJC_ALLOC_RUNS_ALL",
+    "column": "RUN_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_RES_DET",
+    "toTable": "PJC_ALLOC_RUNS_ALL",
+    "column": "RUN_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_BASIS_DET",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_BASIS_DET",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_RES_DET",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_SOURCES",
+    "toTable": "PJC_ALLOC_SOURCE_LINES",
+    "column": "RULE_ID, LINE_NUM"
+  },
+  {
+    "fromTable": "PJC_ALLOC_RUN_TARGETS",
+    "toTable": "PJC_ALLOC_TARGET_LINES",
+    "column": "RULE_ID, LINE_NUM"
+  },
+  {
+    "fromTable": "PJC_ALLOC_SOURCE_LINES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_SOURCE_LINES",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TARGET_LINES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TARGET_LINES",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "CINT_SOURCE_TASK_ID"
+  },
+  {
+    "fromTable": "PJC_ALLOC_TXN_DETAILS",
+    "toTable": "PJC_CINT_RS_REVISIONS",
+    "column": "IND_RATE_SCH_REVISION_ID"
+  },
+  {
+    "fromTable": "PJC_LABOR_DIST_TXN_DETAILS",
+    "toTable": "PJC_ALLOC_TXN_DETAILS",
+    "column": "ALLOC_TXN_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_SOURCE_DETAILS",
+    "toTable": "PJC_ALLOC_TXN_DETAILS",
+    "column": "ALLOC_TXN_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_H",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_H",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_H",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_T",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_T",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_BC_PACKETS_T",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJC_CAPITAL_EVENTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_CAP_EXCEPTIONS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_CAP_EXCEPTIONS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_CC_DIST_LINES_ALL",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_CC_DIST_LINES_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_CC_DIST_LINES_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_CC_ORG_RELATIONSHIPS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "PRVDR_BU_ID"
+  },
+  {
+    "fromTable": "PJC_CC_ORG_RELATIONSHIPS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "RECVR_BU_ID"
+  },
+  {
+    "fromTable": "PJC_CC_PRJ_BU_RELATIONSHIPS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_CC_PRJ_BU_RELATIONSHIPS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "BU_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_COMPILED_MULTS",
+    "toTable": "PJC_CINT_RATE_NAMES",
+    "column": "RATE_NAME_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_COMPILED_MULTS",
+    "toTable": "PJC_CINT_RS_REVISIONS",
+    "column": "CINT_RS_REVISION_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_COMPILED_MULTS",
+    "toTable": "PJC_CINT_RATE_SCH_B",
+    "column": "CINT_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_EXP_TYP_ECL_ALL",
+    "toTable": "PJC_CINT_RATE_INFO_ALL",
+    "column": "RATE_INFO_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RATE_INFO_ALL",
+    "toTable": "PJC_CINT_RATE_NAMES",
+    "column": "RATE_NAME_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RATE_MULTPLRS",
+    "toTable": "PJC_CINT_RS_REVISIONS",
+    "column": "CINT_RS_REVISION_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RATE_MULTPLRS",
+    "toTable": "PJC_CINT_RATE_NAMES",
+    "column": "RATE_NAME_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RATE_NAMES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RS_REVISIONS",
+    "toTable": "PJC_CINT_RATE_SCH_B",
+    "column": "CINT_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJC_CINT_RATE_SCH_B",
+    "column": "CINT_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJC_CINT_RATE_SCH_TL",
+    "toTable": "PJC_CINT_RATE_SCH_B",
+    "column": "CINT_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJC_COMMITMENT_TXNS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_COMMITMENT_TXNS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_COMMITMENT_TXNS",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_COMMITMENT_TXNS",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "SYSTEM_LINKAGE_FUNCTION"
+  },
+  {
+    "fromTable": "PJC_COMMITMENT_TXNS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "BU_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "ORG_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_RATE_OVERRIDES",
+    "column": "RATE_OVERRIDE_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_PERIODS_ALL",
+    "column": "PRVDR_PA_PERIOD_NAME, ORG_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_LINES_ALL",
+    "toTable": "PJF_PERIODS_ALL",
+    "column": "RECVR_PA_PERIOD_NAME, ORG_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSET_LN_DETS",
+    "toTable": "PJC_COST_DIST_LINES_ALL",
+    "column": "EXPENDITURE_ITEM_ID, LINE_NUM"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_OVERRIDES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_COST_DIST_OVERRIDES",
+    "toTable": "PJF_EXP_CATEGORIES_B",
+    "column": "EXPENDITURE_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJC_EXPEND_ITEM_ADJ_ACTS",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_COMMENTS",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_GROUPS_ALL",
+    "toTable": "PJF_TXN_SOURCES_B",
+    "column": "TRANSACTION_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "SYSTEM_LINKAGE_FUNCTION"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "RECVR_ORG_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_EXP_ITEMS_ALL",
+    "toTable": "PJF_TXN_SOURCES_B",
+    "column": "TRANSACTION_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_UPGRADE_TEMP",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "PK1_ID"
+  },
+  {
+    "fromTable": "PJC_PATI_ADJ_QUEUE",
+    "toTable": "PJC_EXP_ITEMS_ALL",
+    "column": "EXPENDITURE_ITEM_ID"
+  },
+  {
+    "fromTable": "PJC_MC_PRJ_AST_LINES_ALL",
+    "toTable": "PJC_PRJ_ASSET_LNS_ALL",
+    "column": "PROJECT_ASSET_LINE_ID"
+  },
+  {
+    "fromTable": "PJC_MC_PRJ_AST_LINE_DTLS",
+    "toTable": "PJC_PRJ_ASSET_LN_DETS",
+    "column": "PROJ_ASSET_LINE_DTL_UNIQ_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSETS_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSET_ASGS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSET_LNS_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSET_LNS_ALL",
+    "toTable": "PJC_PRJ_ASSET_LNS_ALL",
+    "column": "REV_PROJ_ASSET_LINE_ID"
+  },
+  {
+    "fromTable": "PJC_PRJ_ASSET_LN_DETS",
+    "toTable": "PJC_PRJ_ASSET_LNS_ALL",
+    "column": "PROJECT_ASSET_LINE_DETAIL_ID"
+  },
+  {
+    "fromTable": "PJC_TRANSACTION_CONTROLS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_TRANSACTION_CONTROLS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_TRANSACTION_CONTROLS",
+    "toTable": "PJF_EXP_CATEGORIES_B",
+    "column": "EXPENDITURE_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJC_TRANSACTION_CONTROLS",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_TRANSACTION_CONTROLS",
+    "toTable": "PJF_NON_LABOR_RES_B",
+    "column": "NON_LABOR_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_MASS_ADJUST",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_MASS_ADJUST",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_MASS_ADJUST",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_RATE_OVERRIDES",
+    "column": "RATE_OVERRIDE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_TXN_DOCUMENT_B",
+    "column": "DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_TXN_DOC_ENTRY_B",
+    "column": "DOC_ENTRY_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_AUDIT_ALL",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_AUDIT_ALL",
+    "toTable": "PJF_TXN_DOCUMENT_B",
+    "column": "DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_AUDIT_ALL",
+    "toTable": "PJF_TXN_DOC_ENTRY_B",
+    "column": "DOC_ENTRY_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_AUDIT_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_AUDIT_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_TXN_XFACE_CTRL_ALL",
+    "toTable": "PJF_TXN_SOURCES_B",
+    "column": "TRANSACTION_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJC_XCC_BURDEN_DISTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJC_XCC_BURDEN_DISTS",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJC_XCC_BURDEN_DISTS",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "BURDEN_EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJC_XCC_BURDEN_DISTS",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "BUSINESS_UNIT_ID"
+  },
+  {
+    "fromTable": "PJF_AGGR_RES_TYPES",
+    "toTable": "PJF_RESOURCE_CLASSES_B",
+    "column": "RESOURCE_CLASS_ID"
+  },
+  {
+    "fromTable": "PJF_BILLING_CYCLES_TL",
+    "toTable": "PJF_BILLING_CYCLES_B",
+    "column": "BILLING_CYCLE_ID"
+  },
+  {
+    "fromTable": "PJF_PERIODS_CLOSE_TMP",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "INVENTORY_ORG_ID"
+  },
+  {
+    "fromTable": "PJF_EVENT_TYPE_OUS_ALL",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "ORG_ID"
+  },
+  {
+    "fromTable": "PJF_PU_BU_RELATIONSHIP",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "ORG_ID"
+  },
+  {
+    "fromTable": "PJF_EXP_TYPE_OUS_ALL",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "ORG_ID"
+  },
+  {
+    "fromTable": "PJF_PERIODS_ALL",
+    "toTable": "PJF_BU_IMPL_ALL",
+    "column": "ORG_ID"
+  },
+  {
+    "fromTable": "PJF_CLASS_CODES_B",
+    "toTable": "PJF_CLASS_CATEGORIES_B",
+    "column": "CLASS_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJF_CLASS_CATEGORIES_TL",
+    "toTable": "PJF_CLASS_CATEGORIES_B",
+    "column": "CLASS_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJF_VALID_CATEGORIES",
+    "toTable": "PJF_CLASS_CATEGORIES_B",
+    "column": "CLASS_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJF_CLASS_CODES_B_ST",
+    "toTable": "PJF_CLASS_CODES_B",
+    "column": "CLASS_CODE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_CLASSES",
+    "toTable": "PJF_CLASS_CODES_B",
+    "column": "CLASS_CODE_ID"
+  },
+  {
+    "fromTable": "PJF_CLASS_CODES_TL",
+    "toTable": "PJF_CLASS_CODES_B",
+    "column": "CLASS_CODE_ID"
+  },
+  {
+    "fromTable": "PJF_COMPILED_MULTIPLIERS",
+    "toTable": "PJF_COST_BASE_COST_CODES",
+    "column": "COST_BASE_COST_CODE_ID"
+  },
+  {
+    "fromTable": "PJF_COMP_DETAILS_ALL",
+    "toTable": "PJF_COMP_RULE_SETS",
+    "column": "COMP_RULE_SET_NAME"
+  },
+  {
+    "fromTable": "PJF_COMP_DETAILS_ALL",
+    "toTable": "PJF_RATE_SCHEDULES_B",
+    "column": "RATE_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_COMP_OT_DEFAULTS_ALL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_COMP_OT_DEFAULTS_ALL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJF_COMP_OT_DEFAULTS_ALL",
+    "toTable": "PJF_COMP_RULE_SETS",
+    "column": "COMP_RULE_SET_NAME"
+  },
+  {
+    "fromTable": "PJF_COMP_OT_EXP_TYPES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_COMP_OT_EXP_TYPES",
+    "toTable": "PJF_COMP_RULE_SETS",
+    "column": "COMP_RULE_SET_NAME"
+  },
+  {
+    "fromTable": "PJF_ORG_COST_SCH_RULES",
+    "toTable": "PJF_COMP_RULE_SETS",
+    "column": "COMP_RULE_SET_NAME"
+  },
+  {
+    "fromTable": "PJF_COST_BASE_COST_CODES",
+    "toTable": "PJF_COST_BASES",
+    "column": "COST_BASE, COST_BASE_TYPE"
+  },
+  {
+    "fromTable": "PJF_COST_BASE_EXP_TYPES",
+    "toTable": "PJF_COST_BASES",
+    "column": "COST_BASE, COST_BASE_TYPE"
+  },
+  {
+    "fromTable": "PJF_COST_BASE_EXP_TYPES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "PJF_COST_PLUS_STRUCTURES",
+    "column": "IND_STRUCTURE_NAME"
+  },
+  {
+    "fromTable": "PJF_IRS_REVISIONS",
+    "toTable": "PJF_COST_PLUS_STRUCTURES",
+    "column": "IND_STRUCTURE_NAME"
+  },
+  {
+    "fromTable": "PJF_EPS_HIERARCHIES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_EPS_HIERARCHIES",
+    "toTable": "PJF_EPS_HIERARCHIES",
+    "column": "NODE_ID"
+  },
+  {
+    "fromTable": "PJF_EPS_NODES_B",
+    "toTable": "PJF_EPS_HIERARCHIES",
+    "column": "NODE_ID"
+  },
+  {
+    "fromTable": "PJF_EPS_NODES_TL",
+    "toTable": "PJF_EPS_NODES_B",
+    "column": "NODE_ID"
+  },
+  {
+    "fromTable": "PJF_EPS_NODE_MEMBERS",
+    "toTable": "PJF_EPS_NODES_B",
+    "column": "EPS_NODE_ID"
+  },
+  {
+    "fromTable": "PJF_EPS_NODE_MEMBERS",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "PJT_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_EVENT_TYPE_OUS_ALL",
+    "toTable": "PJF_EVENT_TYPES_B",
+    "column": "EVENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EVENT_TYPES_TL",
+    "toTable": "PJF_EVENT_TYPES_B",
+    "column": "EVENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EXPEND_TYP_SYS_LINKS",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EXPEND_TYP_SYS_LINKS",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "SYSTEM_LINKAGE_FUNCTION"
+  },
+  {
+    "fromTable": "PJF_EXP_CATEGORIES_TL",
+    "toTable": "PJF_EXP_CATEGORIES_B",
+    "column": "EXPENDITURE_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJF_EXP_TYPES_B",
+    "toTable": "PJF_EXP_CATEGORIES_B",
+    "column": "EXPENDITURE_CATEGORY_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_SCHEDULE_LINES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_RES_CLASS_EXP_TYPES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EXP_TYPES_B_ST",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EXP_TYPE_OUS_ALL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_EXP_TYPES_TL",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_NON_LABOR_RES_B",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_IND_COST_CODES",
+    "toTable": "PJF_EXP_TYPES_B",
+    "column": "EXPENDITURE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_IND_COMPILED_SETS",
+    "toTable": "PJF_IRS_REVISIONS",
+    "column": "IND_RATE_SCH_REVISION_ID"
+  },
+  {
+    "fromTable": "PJF_IND_COST_MULTIPLIERS",
+    "toTable": "PJF_IRS_REVISIONS",
+    "column": "IND_RATE_SCH_REVISION_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "AWARD_PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_B",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "AWARD_TASK_ID"
+  },
+  {
+    "fromTable": "PJF_IRS_REVISIONS",
+    "toTable": "PJF_IND_RATE_SCH_B",
+    "column": "IND_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_IND_RATE_SCH_B",
+    "column": "COST_IND_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_IND_RATE_SCH_B",
+    "column": "OVR_COST_IND_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJF_IND_RATE_SCH_TL",
+    "toTable": "PJF_IND_RATE_SCH_B",
+    "column": "IND_RATE_SCH_ID"
+  },
+  {
+    "fromTable": "PJF_INT_ATTRIBUTE_MAPPING",
+    "toTable": "PJF_INT_ATTRIBUTE",
+    "column": "ATRM_ATTRIBUTE_CODE"
+  },
+  {
+    "fromTable": "PJF_INT_OPTION_VALUE",
+    "toTable": "PJF_INT_OPTION",
+    "column": "OPTV_OPTION_CODE, OPTV_PRODUCT_CODE"
+  },
+  {
+    "fromTable": "PJF_INT_RULE_ASSIGNMENT",
+    "toTable": "PJF_INT_SYNC_RULE_B",
+    "column": "RAS_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_INT_SYNC_RULE_TL",
+    "toTable": "PJF_INT_SYNC_RULE_B",
+    "column": "SRLB_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_INT_SYNC_RULE_DETAIL",
+    "toTable": "PJF_INT_SYNC_RULE_B",
+    "column": "SRD_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_INT_TRANSFER_DETAIL",
+    "toTable": "PJF_INT_TRANSFER",
+    "column": "TFRD_TFR_ID"
+  },
+  {
+    "fromTable": "PJF_IRS_REVISIONS",
+    "toTable": "PJF_IRS_REVISIONS",
+    "column": "ACTUAL_SCH_REVISION_ID"
+  },
+  {
+    "fromTable": "PJF_MASS_UPD_BATCHES_ALL_TL",
+    "toTable": "PJF_MASS_UPD_BATCHES_ALL_B",
+    "column": "BATCH_ID"
+  },
+  {
+    "fromTable": "PJF_MASS_UPD_DETAILS_B",
+    "toTable": "PJF_MASS_UPD_BATCHES_ALL_B",
+    "column": "BATCH_ID"
+  },
+  {
+    "fromTable": "PJF_MASS_UPD_DETAILS_TL",
+    "toTable": "PJF_MASS_UPD_DETAILS_B",
+    "column": "LINE_ID"
+  },
+  {
+    "fromTable": "PJF_NEXT_ALLOW_STATUSES",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_RATE_SCHEDULE_LINES",
+    "toTable": "PJF_NON_LABOR_RES_B",
+    "column": "NON_LABOR_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_NON_LABOR_RES_TL",
+    "toTable": "PJF_NON_LABOR_RES_B",
+    "column": "NON_LABOR_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_NON_LABOR_RES_ORGS",
+    "toTable": "PJF_NON_LABOR_RES_B",
+    "column": "NON_LABOR_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_OBJECT_IMAGES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "OBJECT_ID"
+  },
+  {
+    "fromTable": "PJF_OBJ_STATUS_CHANGES",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "NEW_PROJECT_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_PROJECT_OPTIONS",
+    "toTable": "PJF_OPTIONS",
+    "column": "OPTION_CODE"
+  },
+  {
+    "fromTable": "PJF_ORG_COST_SCH_RULES",
+    "toTable": "PJF_RATE_SCHEDULES_B",
+    "column": "RATE_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_ORG_COST_SCH_RULE_F",
+    "toTable": "PJF_RATE_SCHEDULES_B",
+    "column": "RATE_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_PLAN_RBS_FORMATS",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_PLAN_RBS_FORMATS",
+    "toTable": "PJF_RES_FORMATS_B",
+    "column": "RES_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJF_PLAN_RES_DEFAULTS",
+    "toTable": "PJF_RESOURCE_CLASSES_B",
+    "column": "RESOURCE_CLASS_ID"
+  },
+  {
+    "fromTable": "PJF_PM_PROD_CNTRL_RULES",
+    "toTable": "PJF_PM_CONTROL_ACTIONS",
+    "column": "CONTROL_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "PROJECT_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_TP_SCHEDULES",
+    "column": "NL_TP_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_TP_SCHEDULES",
+    "column": "LABOR_TP_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_B",
+    "toTable": "PJF_PROJECT_TYPES_B",
+    "column": "PROJECT_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_MRU",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_STRUCTURE_ATTR",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEM_VER_STRUCT",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_OVERRIDES_INT",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_CLASSES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_OPTIONS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENTS_TL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_SUMMARY_DET",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "OBJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_SET_LINES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_COPY_OVERRIDES_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_TRANSACTIONS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_PARTIES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENTS_B",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_OVERRIDES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_SUMMARY",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "OBJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECTS_ALL_TL",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_PRJ_ASSIGNMENTS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_OPP_ATTRS",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_OBJECT_RULES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "OBJECT_ID"
+  },
+  {
+    "fromTable": "PJS_PLAN_TYPES",
+    "toTable": "PJF_PROJECTS_ALL_B",
+    "column": "PROJECT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_PARTIES",
+    "toTable": "PJF_PROJ_ROLE_TYPES_B",
+    "column": "PROJECT_ROLE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_PARTIES",
+    "toTable": "PJT_PROJECT_RESOURCE",
+    "column": "PROJ_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_SETS_TL",
+    "toTable": "PJF_PROJECT_SETS_B",
+    "column": "PROJECT_SET_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_SET_LINES",
+    "toTable": "PJF_PROJECT_SETS_B",
+    "column": "PROJECT_SET_ID"
+  },
+  {
+    "fromTable": "PJF_PROJECT_STATUSES_TL",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "PROJECT_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_PROJ_STATUS_CONTROLS",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "PROJECT_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_PROJ_STATUSES_B_ST",
+    "toTable": "PJF_PROJECT_STATUSES_B",
+    "column": "PROJECT_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJF_PROJECT_TYPES_TL",
+    "toTable": "PJF_PROJECT_TYPES_B",
+    "column": "PROJECT_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_COPY_OVERRIDES_TL",
+    "toTable": "PJF_PROJ_COPY_OVERRIDES_B",
+    "column": "PROJECT_ID, OVERRIDE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENTS_B",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PARENT_STRUCTURE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENT_EFFS_B",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_STRUCTURE_ATTR",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENT_EFFS_TL",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEM_VER_STRUCT",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_OVERRIDES_INT",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJT_PROJ_PLAN_TASK_CMNT",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEMENT_VERSION",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "PROJ_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_OVERRIDES",
+    "toTable": "PJF_PROJ_ELEMENTS_B",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ELEM_VER_STRUCT",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_PROJ_CONSTRAINTS",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_TASK_DEPENDENCIES",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "PRED_ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_TASK_DEPENDENCY_LINKS",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "PRED_ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_TASK_DEPENDENCY_LINKS",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "SUCC_ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_TASK_DEPENDENCY_LINKS",
+    "toTable": "PJF_PROJ_ELEMENT_VERSION",
+    "column": "LINKED_ELEMENT_VERSION_ID"
+  },
+  {
+    "fromTable": "PJR_PROJ_ROLE_QUALIFICATIONS",
+    "toTable": "PJF_PROJ_ROLE_TYPES_B",
+    "column": "PROJECT_ROLE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ROLE_TYPES_B_ST",
+    "toTable": "PJF_PROJ_ROLE_TYPES_B",
+    "column": "PROJECT_ROLE_ID"
+  },
+  {
+    "fromTable": "PJF_PROJ_ROLE_TYPES_TL",
+    "toTable": "PJF_PROJ_ROLE_TYPES_B",
+    "column": "PROJECT_ROLE_ID"
+  },
+  {
+    "fromTable": "PJF_PU_BU_RELATIONSHIP",
+    "toTable": "PJF_PU_IMPL",
+    "column": "PU_ID"
+  },
+  {
+    "fromTable": "PJF_PU_REPORTING_SETTINGS",
+    "toTable": "PJF_PU_IMPL",
+    "column": "PU_ID"
+  },
+  {
+    "fromTable": "PJF_PU_TIME_SOURCES",
+    "toTable": "PJF_PU_REPORTING_SETTINGS",
+    "column": "PU_ID"
+  },
+  {
+    "fromTable": "PJF_RATE_SCHEDULES_TL",
+    "toTable": "PJF_RATE_SCHEDULES_B",
+    "column": "RATE_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEMENTS",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEMENTS",
+    "toTable": "PJF_RBS_ELEMENT_NAMES_B",
+    "column": "RBS_ELEMENT_NAME_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_MAPPING_RULES",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEMENTS_INT",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_TXN_ACCUM_MAP",
+    "toTable": "PJF_RBS_ELEMENTS",
+    "column": "RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEM_MSG_INT",
+    "toTable": "PJF_RBS_ELEMENTS_INT",
+    "column": "TEMP_RBS_ELEMENT_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEMENT_MAP",
+    "toTable": "PJF_RES_TYPES_B",
+    "column": "RESOURCE_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_ELEMENT_NAMES_TL",
+    "toTable": "PJF_RBS_ELEMENT_NAMES_B",
+    "column": "RBS_ELEMENT_NAME_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_HEADERS_TL",
+    "toTable": "PJF_RBS_HEADERS_B",
+    "column": "RBS_HEADER_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_VERSIONS_B",
+    "toTable": "PJF_RBS_HEADERS_B",
+    "column": "RBS_HEADER_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_PRJ_ASSIGNMENTS",
+    "toTable": "PJF_RBS_HEADERS_B",
+    "column": "RBS_HEADER_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_MAPPING_RULES",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_PRJ_ASSIGNMENTS",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_TXN_ACCUM_MAP",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_RBS_VERSIONS_TL",
+    "toTable": "PJF_RBS_VERSIONS_B",
+    "column": "RBS_VERSION_ID"
+  },
+  {
+    "fromTable": "PJF_RES_CLASS_EXP_TYPES",
+    "toTable": "PJF_RESOURCE_CLASSES_B",
+    "column": "RESOURCE_CLASS_ID"
+  },
+  {
+    "fromTable": "PJF_RESOURCE_CLASSES_TL",
+    "toTable": "PJF_RESOURCE_CLASSES_B",
+    "column": "RESOURCE_CLASS_ID"
+  },
+  {
+    "fromTable": "PJF_RES_FORMATS_B",
+    "toTable": "PJF_RES_TYPES_B",
+    "column": "RES_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_RES_FORMATS_TL",
+    "toTable": "PJF_RES_FORMATS_B",
+    "column": "RES_FORMAT_ID"
+  },
+  {
+    "fromTable": "PJF_RES_TYPES_TL",
+    "toTable": "PJF_RES_TYPES_B",
+    "column": "RES_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_SYSTEM_LINKAGES",
+    "toTable": "PJF_SYSTEM_LINKAGES",
+    "column": "COST_CREDIT_FUNCTION_CODE"
+  },
+  {
+    "fromTable": "PJF_SYSTEM_LINKAGES_TL",
+    "toTable": "PJF_SYSTEM_LINKAGES_B",
+    "column": "FUNCTION"
+  },
+  {
+    "fromTable": "PJF_TP_SCHEDULE_LINES",
+    "toTable": "PJF_TP_RULES",
+    "column": "TP_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_TP_SCHEDULE_LINES",
+    "toTable": "PJF_TP_RULES",
+    "column": "NL_TP_RULE_ID"
+  },
+  {
+    "fromTable": "PJF_TP_SCHEDULE_LINES",
+    "toTable": "PJF_TP_SCHEDULES",
+    "column": "TP_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_TP_SCHEDULE_LINE_LKP",
+    "toTable": "PJF_TP_SCHEDULES",
+    "column": "TP_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "PJF_TP_SCHEDULE_LINE_LKP",
+    "toTable": "PJF_TP_SCHEDULE_LINES",
+    "column": "TP_SCHEDULE_LINE_ID"
+  },
+  {
+    "fromTable": "PJF_TXN_DOCUMENT_B",
+    "toTable": "PJF_TXN_SOURCES_B",
+    "column": "TRANSACTION_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_TXN_DOCUMENT_TL",
+    "toTable": "PJF_TXN_DOCUMENT_B",
+    "column": "DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJF_TXN_DOC_ENTRY_B",
+    "toTable": "PJF_TXN_DOCUMENT_B",
+    "column": "DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJF_TXN_DOC_ENTRY_TL",
+    "toTable": "PJF_TXN_DOC_ENTRY_B",
+    "column": "DOC_ENTRY_ID"
+  },
+  {
+    "fromTable": "PJF_TXN_SOURCES_TL",
+    "toTable": "PJF_TXN_SOURCES_B",
+    "column": "TRANSACTION_SOURCE_ID"
+  },
+  {
+    "fromTable": "PJF_WORK_TYPES_B_ST",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJF_WORK_TYPES_TL",
+    "toTable": "PJF_WORK_TYPES_B",
+    "column": "WORK_TYPE_ID"
+  },
+  {
+    "fromTable": "PJT_BASELINES_B",
+    "toTable": "PJT_PLAN_VERSIONS",
+    "column": "PLAN_VERSION_ID"
+  },
+  {
+    "fromTable": "PJT_BASELINES_TL",
+    "toTable": "PJT_BASELINES_B",
+    "column": "BASELINE_ID"
+  },
+  {
+    "fromTable": "PJT_CALENDAR_ACTIVITIES_TL",
+    "toTable": "PJT_CALENDAR_ACTIVITIES_B",
+    "column": "CALENDAR_ACTIVITY_ID"
+  },
+  {
+    "fromTable": "PJT_MESSAGE_TOKENS",
+    "toTable": "PJT_ERROR_MESSAGES",
+    "column": "MESSAGE_ID"
+  },
+  {
+    "fromTable": "PJT_GATE_APPROVERS_B",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "APPROVAL_RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_GATE_APPROVERS_TL",
+    "toTable": "PJT_GATE_APPROVERS_B",
+    "column": "APPROVAL_ID"
+  },
+  {
+    "fromTable": "PJT_GATE_STATUSES_TL",
+    "toTable": "PJT_GATE_STATUSES_B",
+    "column": "GATE_STATUS_CODE"
+  },
+  {
+    "fromTable": "PJT_INT_ATTRIBUTE_MAPPING",
+    "toTable": "PJT_INT_ATTRIBUTE",
+    "column": "ATRM_ATTRIBUTE_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_INT_OPTION_VALUE",
+    "toTable": "PJT_INT_OPTION",
+    "column": "OPTV_OPTION_CODE, OPTV_PRODUCT_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_INT_SYNC_RULE_DETAIL",
+    "toTable": "PJT_INT_SYNC_RULE_B",
+    "column": "SRD_RULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_INT_SYNC_RULE_TL",
+    "toTable": "PJT_INT_SYNC_RULE_B",
+    "column": "SRLB_RULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_INT_TRANSFER_DETAIL",
+    "toTable": "PJT_INT_TRANSFER",
+    "column": "TFRD_TFR_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_PLAN_VERSIONS",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "PUBLISHED_BY_PERSON_ID"
+  },
+  {
+    "fromTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_MANAGER_ID"
+  },
+  {
+    "fromTable": "PJT_PRJ_ENT_RESOURCE_IMAGES",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "OWNER_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "SCRUM_MASTER_ID"
+  },
+  {
+    "fromTable": "PJT_PROJ_PLAN_LINES",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_HIERARCHY_B",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "OWNER_ID"
+  },
+  {
+    "fromTable": "PJT_PRJ_ENTERPRISE_RESOURCE_TL",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_PROJECT_RESOURCE",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_PROJ_PLAN_LINES_H",
+    "toTable": "PJT_PRJ_ENTERPRISE_RESOURCE_B",
+    "column": "RESOURCE_ID"
+  },
+  {
+    "fromTable": "PJT_PRODUCT_B",
+    "toTable": "PJT_PRODUCT_FAMILY_B",
+    "column": "PRODUCT_FAMILY_ID"
+  },
+  {
+    "fromTable": "PJT_PRODUCT_TL",
+    "toTable": "PJT_PRODUCT_B",
+    "column": "PRODUCT_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_PRODUCT_B",
+    "column": "PRODUCT_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_HIERARCHY_B",
+    "toTable": "PJT_PRODUCT_B",
+    "column": "PRODUCT_ID"
+  },
+  {
+    "fromTable": "PJT_PRODUCT_FAMILY_TL",
+    "toTable": "PJT_PRODUCT_FAMILY_B",
+    "column": "PRODUCT_FAMILY_ID"
+  },
+  {
+    "fromTable": "PJT_PROJECT_ROLES_TL",
+    "toTable": "PJT_PROJECT_ROLES_B",
+    "column": "PROJECT_ROLE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJT_PROJ_REF_OBJECT_TL",
+    "toTable": "PJT_PROJ_REF_OBJECT_B",
+    "column": "REF_OBJECT_ID"
+  },
+  {
+    "fromTable": "PJT_RELEASE_TL",
+    "toTable": "PJT_RELEASE_B",
+    "column": "RELEASE_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_RELEASE_B",
+    "column": "RELEASE_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_HIERARCHY_B",
+    "toTable": "PJT_RELEASE_B",
+    "column": "RELEASE_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_SPRINT_B",
+    "column": "SPRINT_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_B",
+    "toTable": "PJT_RQMT_HIERARCHY_B",
+    "column": "PARENT_RQMT_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_ACPT_CRITERIA_B",
+    "toTable": "PJT_REQUIREMENTS_B",
+    "column": "RQMT_ID"
+  },
+  {
+    "fromTable": "PJT_REQUIREMENTS_TL",
+    "toTable": "PJT_REQUIREMENTS_B",
+    "column": "RQMT_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_ACPT_CRITERIA_TL",
+    "toTable": "PJT_RQMT_ACPT_CRITERIA_B",
+    "column": "CRITERIA_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_HIERARCHY_B",
+    "toTable": "PJT_RQMT_HIERARCHY_B",
+    "column": "PARENT_RQMT_LEVEL_ID"
+  },
+  {
+    "fromTable": "PJT_RQMT_HIERARCHY_TL",
+    "toTable": "PJT_RQMT_HIERARCHY_B",
+    "column": "RQMT_LEVEL_ID"
+  },
+  {
+    "fromTable": "PJT_SPRINT_TL",
+    "toTable": "PJT_SPRINT_B",
+    "column": "SPRINT_ID"
+  },
+  {
+    "fromTable": "PJT_UP_USER_REQUESTS",
+    "toTable": "PJT_UP_REQUESTS",
+    "column": "ENTERPRISE_ID, UP_REQUEST_ID"
+  },
+  {
+    "fromTable": "PJT_UP_ROLE_REQUESTS",
+    "toTable": "PJT_UP_REQUESTS",
+    "column": "ENTERPRISE_ID, UP_REQUEST_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_ATTACHMENTS",
+    "toTable": "PJE_CHANGE_DOCUMENT_B",
+    "column": "CHANGE_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_PARTICIPANTS_B",
+    "toTable": "PJE_CHANGE_DOCUMENT_B",
+    "column": "CHANGE_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_IMPACTS_B",
+    "toTable": "PJE_CHANGE_DOCUMENT_B",
+    "column": "CHANGE_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_DOCUMENT_TL",
+    "toTable": "PJE_CHANGE_DOCUMENT_B",
+    "column": "CHANGE_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_IMPACTS_TL",
+    "toTable": "PJE_CHANGE_IMPACTS_B",
+    "column": "IMPACT_ID"
+  },
+  {
+    "fromTable": "PJE_CHANGE_PARTICIPANTS_TL",
+    "toTable": "PJE_CHANGE_PARTICIPANTS_B",
+    "column": "PARTICIPANT_ID"
+  },
+  {
+    "fromTable": "PJE_DELIVERABLES_B",
+    "toTable": "PJE_DELIVERABLE_TYPES_B",
+    "column": "DELIVERABLE_TYPE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJE_ISSUES_B",
+    "toTable": "PJE_ISSUE_TYPES_B",
+    "column": "ISSUE_TYPE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJE_ISSUE_ACTIONS",
+    "toTable": "PJE_ISSUES_B",
+    "column": "ISSUE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJS_MT_MEASURES_B",
+    "toTable": "PJS_MT_MEASURE_SETS_B",
+    "column": "MEASURE_SET_CODE"
+  },
+  {
+    "fromTable": "PJS_MT_RELATED_MEASURES",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "PRIMARY_MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_MT_RELATED_MEASURES",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "RELATED_MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_MT_MEASURES_TL",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_TRANSACTIONS",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_BZ_MEASURES",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_RULES_B",
+    "toTable": "PJS_MT_MEASURES_B",
+    "column": "MEASURE_ID"
+  },
+  {
+    "fromTable": "PJS_MT_MEASURE_SETS_TL",
+    "toTable": "PJS_MT_MEASURE_SETS_B",
+    "column": "MEASURE_SET_CODE"
+  },
+  {
+    "fromTable": "PJS_MT_ROWSET_DET",
+    "toTable": "PJS_MT_MEASURE_SETS_B",
+    "column": "MEASURE_SET_CODE"
+  },
+  {
+    "fromTable": "PJS_MT_ROWSET_TL",
+    "toTable": "PJS_MT_ROWSET_B",
+    "column": "ROWSET_CODE"
+  },
+  {
+    "fromTable": "PJS_MT_ROWSET_DET",
+    "toTable": "PJS_MT_ROWSET_B",
+    "column": "ROWSET_CODE"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_SUMMARY_DET",
+    "toTable": "PJS_PERF_KPA_SUMMARY",
+    "column": "KPA_SUMMARY_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_SUMMARY_DET",
+    "toTable": "PJS_PERF_RULES_B",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_TRANS",
+    "toTable": "PJS_PERF_KPA_SUMMARY_DET",
+    "column": "KPA_SUMMARY_DET_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_KPA_TRANS",
+    "toTable": "PJS_PERF_TRANSACTIONS",
+    "column": "PERF_TXN_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_OBJECT_RULES",
+    "toTable": "PJS_PERF_RULES_B",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_TRANSACTIONS",
+    "toTable": "PJS_PERF_OBJECT_RULES",
+    "column": "OBJECT_RULE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_THRESHOLDS",
+    "toTable": "PJS_PERF_RULES_B",
+    "column": "THRES_OBJ_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_TRANSACTIONS",
+    "toTable": "PJS_PERF_RULES_B",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJS_PERF_RULES_TL",
+    "toTable": "PJS_PERF_RULES_B",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "PJR_OBJECT_STATUSES_TL",
+    "toTable": "PJR_OBJECT_STATUSES_B",
+    "column": "STATUS_CODE, OBJECT_TYPE"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_COND_CRITERIA",
+    "toTable": "PJR_RESOURCE_CONDITIONS_B",
+    "column": "CONDITION_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_CONDITIONS_TL",
+    "toTable": "PJR_RESOURCE_CONDITIONS_B",
+    "column": "CONDITION_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_COND_RESULTS_DTL",
+    "toTable": "PJR_RESOURCE_COND_RESULTS_HDR",
+    "column": "RESULT_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_POOLS_MRU",
+    "toTable": "PJR_RESOURCE_POOLS_B",
+    "column": "POOL_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_POOLS_TL",
+    "toTable": "PJR_RESOURCE_POOLS_B",
+    "column": "POOL_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_REQUEST_SCHEDULES",
+    "toTable": "PJR_RESOURCE_REQUESTS",
+    "column": "RESOURCE_REQUEST_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_REQUEST_LINES",
+    "toTable": "PJR_RESOURCE_REQUESTS",
+    "column": "RESOURCE_REQUEST_ID"
+  },
+  {
+    "fromTable": "PJR_RESOURCE_REQUEST_DETAILS",
+    "toTable": "PJR_RESOURCE_REQUESTS",
+    "column": "RESOURCE_REQUEST_ID"
+  }
+]
