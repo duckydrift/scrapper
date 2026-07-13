@@ -1,0 +1,81 @@
+[{
+    "Name": "Common Application Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/applications-common/26c/oedma/atkessmetadsattrs-24190.html#3-Middleware-Extensions-for-Applications-4",
+    "Filter": "Tables/views starting with FND"
+},
+{
+    "Name": "Procurement Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/procurement/26c/oedmp/index.html",
+    "Filter": ""
+},
+{
+    "Name": "Project Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/project-management/26c/oedpp/#Tables-16",
+    "Filter": "Tables/views starting with FND"
+},
+{
+    "Name": "HCM Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/human-resources/oedmh/toc.htm",
+    "Filter": ""
+}, 
+{
+    "Name": "Financials Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/financials/oedmf/toc.htm",
+    "Filter": ""
+},
+{
+    "Name": "Supply Chain Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/supply-chain-management/oedms/toc.htm",
+    "Filter": ""
+},
+{
+    "Name": "Manufacturing Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/manufacturing/oedmm/toc.htm",
+    "Filter": ""
+},
+{
+    "Name": "Sales Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/sales/oedms/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Service Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/service/oedms/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Marketing Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/marketing/oedmm/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Performance Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-performance-management/oedme/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Data Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-data-management/oedmd/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Tax Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-tax/oedmt/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Contracts Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-contracts/oedmc/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Risk Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-risk-management/oedmr/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Governance, Risk, and Compliance Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-governance-risk-and-compliance/oedmg/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Performance Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-performance-management/oedme/toc.htm",
+    "Filter": ""
+},{
+    "Name": "Enterprise Data Management Tables",
+    "URL": "https://docs.oracle.com/en/cloud/saas/enterprise-data-management/oedmd/toc.htm",
+    "Filter": ""
+}
+]

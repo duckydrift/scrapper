@@ -1,0 +1,2002 @@
+[
+  {
+    "fromTable": "PO_AGENT_ACCESSES",
+    "toTable": "PO_AGENT_ASSIGNMENTS",
+    "column": "ASSIGNMENT_ID"
+  },
+  {
+    "fromTable": "PO_APPROVED_SUPPLIER_LIST",
+    "toTable": "PO_ASL_STATUSES",
+    "column": "ASL_STATUS_ID"
+  },
+  {
+    "fromTable": "PO_APPROVED_SUPPLIER_LIST",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PO_ASL_DOCUMENTS",
+    "toTable": "PO_APPROVED_SUPPLIER_LIST",
+    "column": "ASL_ID"
+  },
+  {
+    "fromTable": "PO_ASL_ATTRIBUTES",
+    "toTable": "PO_APPROVED_SUPPLIER_LIST",
+    "column": "ASL_ID"
+  },
+  {
+    "fromTable": "PO_ATTRIBUTE_VALUES",
+    "toTable": "PO_LINES_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_ATTRIBUTE_VALUES",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_ATTRIBUTE_VALUES_DRAFT",
+    "toTable": "PO_LINES_DRAFT_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_ATTRIBUTE_VALUES_TLP",
+    "toTable": "PO_LINES_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_ATTRIBUTE_VALUES_TLP_DRAFT",
+    "toTable": "PO_LINES_DRAFT_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_ATTR_VALUES_INTERFACE",
+    "toTable": "PO_LINES_INTERFACE",
+    "column": "INTERFACE_LINE_ID"
+  },
+  {
+    "fromTable": "PO_CO_TEMPLATES_B",
+    "toTable": "PO_CO_TEMPLATES_B",
+    "column": "SEEDED_TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PO_CO_TEMPLATES_TL",
+    "toTable": "PO_CO_TEMPLATES_B",
+    "column": "TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PO_DOCUMENT_TYPES_ALL_B",
+    "toTable": "PO_CO_TEMPLATES_B",
+    "column": "CO_TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PO_CO_TEMPLATE_ATTR_VALUES",
+    "toTable": "PO_CO_TEMPLATES_B",
+    "column": "TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PO_DISTRIBUTIONS_ARCHIVE_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_DISTRIBUTIONS_DRAFT_ALL",
+    "toTable": "PO_LINE_LOCATIONS_DRAFT_ALL",
+    "column": "LINE_LOCATION_ID"
+  },
+  {
+    "fromTable": "PO_DISTRIBUTIONS_INTERFACE",
+    "toTable": "PO_LINE_LOCATIONS_INTERFACE",
+    "column": "INTERFACE_LINE_LOCATION_ID"
+  },
+  {
+    "fromTable": "PO_DOCUMENT_TYPES_ALL_TL",
+    "toTable": "PO_DOCUMENT_TYPES_ALL_B",
+    "column": "DOCUMENT_TYPE_CODE, DOCUMENT_SUBTYPE, PRC_BU_ID"
+  },
+  {
+    "fromTable": "PO_DOC_STYLE_VALUES",
+    "toTable": "PO_DOC_STYLE_HEADERS",
+    "column": "STYLE_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PO_DOC_STYLE_HEADERS",
+    "column": "PO_STYLE_ID"
+  },
+  {
+    "fromTable": "PO_DOC_STYLE_LINES_B",
+    "toTable": "PO_DOC_STYLE_HEADERS",
+    "column": "STYLE_ID"
+  },
+  {
+    "fromTable": "PO_DOC_STYLE_LINES_TL",
+    "toTable": "PO_DOC_STYLE_LINES_B",
+    "column": "STYLE_ID, DOCUMENT_SUBTYPE"
+  },
+  {
+    "fromTable": "PO_GA_ORG_ASSIGNMENTS",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_GA_ORG_ASSIGN_DRAFT",
+    "toTable": "PO_HEADERS_DRAFT_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_HAZARD_CLASSES_TL",
+    "toTable": "PO_HAZARD_CLASSES_B",
+    "column": "HAZARD_CLASS_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ARCHIVE_ALL",
+    "toTable": "PO_HAZARD_CLASSES_B",
+    "column": "HAZARD_CLASS_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_HAZARD_CLASSES_B",
+    "column": "HAZARD_CLASS_ID"
+  },
+  {
+    "fromTable": "PO_LINES_DRAFT_ALL",
+    "toTable": "PO_HAZARD_CLASSES_B",
+    "column": "HAZARD_CLASS_ID"
+  },
+  {
+    "fromTable": "PO_UN_NUMBERS_B",
+    "toTable": "PO_HAZARD_CLASSES_B",
+    "column": "HAZARD_CLASS_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_ALL",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_ALL",
+    "toTable": "POZ_SUPPLIER_MERGE_REQUESTS",
+    "column": "MERGE_REQUEST_ID"
+  },
+  {
+    "fromTable": "POR_DOC_UPLOAD_JOBS",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_RECENT_ACTIVITIES",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "OBJECT_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS_HISTORY",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ARCHIVE_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ARCHIVE_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "FROM_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "FROM_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_NOTIFICATION_CTRL_ARCHIVE",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_NOTIFICATION_CONTROLS",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "FROM_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_DRAFT_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "FROM_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ARCHIVE_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ARCHIVE_ALL",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "FROM_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_SMART_FORMS_ALL_B",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "AGREEMENT_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_ARCHIVE_ALL",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_ARCHIVE_ALL",
+    "toTable": "POZ_SUPPLIER_CONTACTS",
+    "column": "VENDOR_CONTACT_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_DRAFT_ALL",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_DRAFT_ALL",
+    "toTable": "POZ_SUPPLIER_MERGE_REQUESTS",
+    "column": "MERGE_REQUEST_ID"
+  },
+  {
+    "fromTable": "PO_HEADERS_DRAFT_ALL",
+    "toTable": "POZ_SUPPLIER_CONTACTS",
+    "column": "VENDOR_CONTACT_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_DRAFT_ALL",
+    "toTable": "PO_HEADERS_DRAFT_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_NOTIFICATION_CTRL_DRAFT",
+    "toTable": "PO_HEADERS_DRAFT_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_VERSIONS",
+    "toTable": "PO_HEADERS_DRAFT_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_DOC_UPLOAD_JOBS",
+    "toTable": "PO_HEADERS_INTERFACE",
+    "column": "INTERFACE_HEADER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_UN_NUMBERS_B",
+    "column": "UN_NUMBER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ALL",
+    "toTable": "PO_LINES_ALL",
+    "column": "FROM_LINE_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_LINES_ALL",
+    "column": "FROM_LINE_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_LINES_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_LINES_DRAFT_ALL",
+    "toTable": "PO_LINES_ALL",
+    "column": "FROM_LINE_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ARCHIVE_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_LINES_ARCHIVE_ALL",
+    "toTable": "PO_UN_NUMBERS_B",
+    "column": "UN_NUMBER_ID"
+  },
+  {
+    "fromTable": "PO_LINES_DRAFT_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_LINES_DRAFT_ALL",
+    "toTable": "PO_UN_NUMBERS_B",
+    "column": "UN_NUMBER_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_DRAFT_ALL",
+    "toTable": "PO_LINES_DRAFT_ALL",
+    "column": "PO_LINE_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_LINE_LOCATIONS_ALL",
+    "column": "FROM_LINE_LOCATION_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ALL",
+    "toTable": "PO_LINE_LOCATIONS_ALL",
+    "column": "SOURCE_SHIPMENT_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_DRAFT_ALL",
+    "toTable": "PO_LINE_LOCATIONS_ALL",
+    "column": "FROM_LINE_LOCATION_ID"
+  },
+  {
+    "fromTable": "PO_LINE_LOCATIONS_ARCHIVE_ALL",
+    "toTable": "PO_LINE_LOCATIONS_ALL",
+    "column": "FROM_LINE_LOCATION_ID"
+  },
+  {
+    "fromTable": "POR_REQ_BU_OPTIONS_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_SYSTEM_PARAMETERS_ALL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_LINE_TYPES_TL",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "POR_SMART_FORMS_ALL_B",
+    "toTable": "PO_LINE_TYPES_B",
+    "column": "LINE_TYPE_ID"
+  },
+  {
+    "fromTable": "PO_RECENT_ACTIVITIES",
+    "toTable": "PO_VERSIONS",
+    "column": "PO_VERSION_ID"
+  },
+  {
+    "fromTable": "PO_SPCL_HANDLING_TYPES_TL",
+    "toTable": "PO_SPCL_HANDLING_TYPES_B",
+    "column": "SPECIAL_HANDLING_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_NEG_ABSTRACT_CONFIG",
+    "toTable": "PO_SYSTEM_PARAMETERS_ALL",
+    "column": "PRC_BU_ID"
+  },
+  {
+    "fromTable": "PO_UN_NUMBERS_TL",
+    "toTable": "PO_UN_NUMBERS_B",
+    "column": "UN_NUMBER_ID"
+  },
+  {
+    "fromTable": "PO_WC_HEADERS",
+    "toTable": "PO_HEADERS_ALL",
+    "column": "PO_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_AMX_AGGREGATE_ATTRIBUTES",
+    "toTable": "POR_AMX_ATTRIBUTES",
+    "column": "ATTRIBUTE_ID"
+  },
+  {
+    "fromTable": "POR_AMX_ATTRIBUTES",
+    "toTable": "POR_AMX_DIMENSIONS",
+    "column": "DIMENSION_ID"
+  },
+  {
+    "fromTable": "POR_AMX_CUSTOM_ATTRIBUTES",
+    "toTable": "POR_AMX_ATTRIBUTES",
+    "column": "ATTRIBUTE_ID"
+  },
+  {
+    "fromTable": "POR_AMX_CURRENCY_ATTRIBUTES",
+    "toTable": "POR_AMX_ATTRIBUTES",
+    "column": "ATTRIBUTE_ID"
+  },
+  {
+    "fromTable": "POR_AMX_RULE_ATTRIBUTE_USAGES",
+    "toTable": "POR_AMX_ATTRIBUTES",
+    "column": "ATTRIBUTE_ID"
+  },
+  {
+    "fromTable": "POR_AMX_DIMENSIONS",
+    "toTable": "POR_AMX_TASKS",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "POR_AMX_PARTICIPANTS",
+    "toTable": "POR_AMX_STAGES",
+    "column": "STAGE_ID"
+  },
+  {
+    "fromTable": "POR_AMX_RULESET_CHECKSUMS",
+    "toTable": "POR_AMX_PARTICIPANTS",
+    "column": "PARTICIPANT_ID"
+  },
+  {
+    "fromTable": "POR_AMX_STAGES",
+    "toTable": "POR_AMX_TASKS",
+    "column": "TASK_ID"
+  },
+  {
+    "fromTable": "POR_BROWSE_NORMALIZED_TREES",
+    "toTable": "POR_BROWSE_CATEGORIES_B",
+    "column": "PARENT_CATEGORY_ID"
+  },
+  {
+    "fromTable": "POR_BROWSE_CATEGORIES_TL",
+    "toTable": "POR_BROWSE_CATEGORIES_B",
+    "column": "CATEGORY_ID"
+  },
+  {
+    "fromTable": "POR_BROWSE_TREES",
+    "toTable": "POR_BROWSE_CATEGORIES_B",
+    "column": "PARENT_CATEGORY_ID"
+  },
+  {
+    "fromTable": "POR_CATALOG_ASSIGNMENTS",
+    "toTable": "POR_CATALOGS_ALL_B",
+    "column": "CATALOG_ID"
+  },
+  {
+    "fromTable": "POR_INFO_CATALOGS",
+    "toTable": "POR_CATALOGS_ALL_B",
+    "column": "CATALOG_ID"
+  },
+  {
+    "fromTable": "POR_LOCAL_CATALOGS",
+    "toTable": "POR_CATALOGS_ALL_B",
+    "column": "CATALOG_ID"
+  },
+  {
+    "fromTable": "POR_CATALOGS_ALL_TL",
+    "toTable": "POR_CATALOGS_ALL_B",
+    "column": "CATALOG_ID"
+  },
+  {
+    "fromTable": "POR_PUNCHOUT_CATALOGS",
+    "toTable": "POR_CATALOGS_ALL_B",
+    "column": "CATALOG_ID"
+  },
+  {
+    "fromTable": "POR_CONTENT_ZONES_ALL_TL",
+    "toTable": "POR_CONTENT_ZONES_ALL_B",
+    "column": "CONTENT_ZONE_ID"
+  },
+  {
+    "fromTable": "POR_CZ_SECURITY_ASSIGNMENTS",
+    "toTable": "POR_CONTENT_ZONES_ALL_B",
+    "column": "CONTENT_ZONE_ID"
+  },
+  {
+    "fromTable": "POR_CZ_ASSIGNMENTS",
+    "toTable": "POR_CONTENT_ZONES_ALL_B",
+    "column": "CONTENT_ZONE_ID"
+  },
+  {
+    "fromTable": "POR_DOC_PARSE_ERRORS",
+    "toTable": "POR_DOC_UPLOAD_JOBS",
+    "column": "JOB_NUMBER"
+  },
+  {
+    "fromTable": "POR_PUNCHOUT_ITEM_ERRORS",
+    "toTable": "POR_DOC_UPLOAD_JOBS",
+    "column": "JOB_NUMBER"
+  },
+  {
+    "fromTable": "POR_INFO_TEMPLATES_ALL_TL",
+    "toTable": "POR_INFO_TEMPLATES_ALL_B",
+    "column": "INFO_TEMPLATE_ID"
+  },
+  {
+    "fromTable": "POR_PL_INFO_TEMPLATE_VALUES",
+    "toTable": "POR_INFO_TEMPLATES_ALL_B",
+    "column": "INFO_TEMPLATE_ID"
+  },
+  {
+    "fromTable": "POR_ITEMS_CTX_DTLS_TLP",
+    "toTable": "POR_ITEMS_CTX_HDRS_TLP",
+    "column": "ITEM_CTX_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_MAP_SET_HEADERS_ALL_TL",
+    "toTable": "POR_MAP_SET_HEADERS_ALL_B",
+    "column": "MAP_SET_ID"
+  },
+  {
+    "fromTable": "POR_MAP_SET_LINES",
+    "toTable": "POR_MAP_SET_HEADERS_ALL_B",
+    "column": "MAP_SET_ID"
+  },
+  {
+    "fromTable": "POR_PUNCHOUT_CATALOGS",
+    "toTable": "POR_MAP_SET_HEADERS_ALL_B",
+    "column": "MAP_SET_ID"
+  },
+  {
+    "fromTable": "POR_ONE_TIME_LOCATIONS",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "REQUISITION_LINE_ID"
+  },
+  {
+    "fromTable": "POR_PERSONAL_LIST_LINES",
+    "toTable": "POR_PERSONAL_LIST_HEADERS",
+    "column": "PERSONAL_LIST_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_PL_INFO_TEMPLATE_VALUES",
+    "toTable": "POR_PERSONAL_LIST_LINES",
+    "column": "PERSONAL_LIST_LINE_ID"
+  },
+  {
+    "fromTable": "POR_PUBLIC_LIST_HEADERS_ALL_TL",
+    "toTable": "POR_PUBLIC_LIST_HEADERS_ALL_B",
+    "column": "PUBLIC_LIST_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_PUNCHOUT_CATALOGS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POR_PUNCHOUT_ITEMS",
+    "toTable": "POR_PUNCHOUT_CATALOGS",
+    "column": "PUNCHOUT_CATALOG_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS",
+    "toTable": "POR_REQUISITION_HEADERS_ALL",
+    "column": "ORIG_REQ_HEADER_ID"
+  },
+  {
+    "fromTable": "POR_REQUISITION_LINES_ALL",
+    "toTable": "POR_REQUISITION_HEADERS_ALL",
+    "column": "REQUISITION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BACKING_REQ_HISTORY",
+    "toTable": "POR_REQUISITION_HEADERS_ALL",
+    "column": "REQUISITION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS_HISTORY",
+    "toTable": "POR_REQUISITION_HEADERS_ALL",
+    "column": "ORIG_REQ_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BACKING_REQUISITIONS",
+    "toTable": "POR_REQUISITION_HEADERS_ALL",
+    "column": "REQUISITION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "ORIG_REQ_LINE_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "SPLIT_REQ_LINE_ID"
+  },
+  {
+    "fromTable": "PON_BACKING_REQ_HISTORY",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "REQUISITION_LINE_ID"
+  },
+  {
+    "fromTable": "POR_REQ_DISTRIBUTIONS_ALL",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "REQUISITION_LINE_ID"
+  },
+  {
+    "fromTable": "POR_REQ_INFO_TEMPLATE_VALUES",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "REQUISITION_LINE_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS_HISTORY",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "ORIG_REQ_LINE_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS_HISTORY",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "SPLIT_REQ_LINE_ID"
+  },
+  {
+    "fromTable": "PON_BACKING_REQUISITIONS",
+    "toTable": "POR_REQUISITION_LINES_ALL",
+    "column": "REQUISITION_LINE_ID"
+  },
+  {
+    "fromTable": "POR_REQ_BCEA_DATA",
+    "toTable": "POR_REQ_DISTRIBUTIONS_ALL",
+    "column": "DISTRIBUTION_ID"
+  },
+  {
+    "fromTable": "POR_REQ_CONFIG_COMPS_INT",
+    "toTable": "POR_REQ_LINES_INTERFACE_ALL",
+    "column": "REQ_LINE_INTERFACE_ID"
+  },
+  {
+    "fromTable": "POR_REQ_DISTS_INTERFACE_ALL",
+    "toTable": "POR_REQ_LINES_INTERFACE_ALL",
+    "column": "REQ_LINE_INTERFACE_ID"
+  },
+  {
+    "fromTable": "POR_REQ_LINES_INTERFACE_ALL",
+    "toTable": "POR_REQ_HEADERS_INTERFACE_ALL",
+    "column": "REQ_HEADER_INTERFACE_ID"
+  },
+  {
+    "fromTable": "POR_SMART_FORMS_ALL_B",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "SUPPLIER_ID"
+  },
+  {
+    "fromTable": "POR_SMART_FORM_CAT_ASSIGNMENTS",
+    "toTable": "POR_SMART_FORMS_ALL_B",
+    "column": "SMART_FORM_ID"
+  },
+  {
+    "fromTable": "POR_SMART_FORMS_ALL_TL",
+    "toTable": "POR_SMART_FORMS_ALL_B",
+    "column": "SMART_FORM_ID"
+  },
+  {
+    "fromTable": "POR_USER_PREF_ACCOUNTS_ALL",
+    "toTable": "POR_USER_PREFERENCES_ALL",
+    "column": "USER_PREFERENCE_ID"
+  },
+  {
+    "fromTable": "PON_ACCEPTANCES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_ACCEPTANCES",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_ACKNOWLEDGEMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_ATTACHMENT_SUMMARY",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_ATTRIBUTE_SCORES",
+    "toTable": "PON_AUCTION_ATTRIBUTES",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER, ATTRIBUTE_SEQUENCE_NUMBER, ATTRIBUTE_LIST_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_ATTRIBUTES",
+    "toTable": "PON_AUCTION_SECTIONS",
+    "column": "SECTION_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_CURRENCY_RATES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUC_DOCTYPES_B",
+    "column": "DOCTYPE_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "TEMPLATE_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_ORIG_AMEND"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_PREV_AMEND"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_NEGOTIATION_STYLES_B",
+    "column": "STYLE_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_ORIG_ROUND"
+  },
+  {
+    "fromTable": "PON_AUCTION_HEADERS_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_PREV_ROUND"
+  },
+  {
+    "fromTable": "PON_NEGOTIATION_ABSTRACTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SECTIONS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS_HISTORY",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SCORES_INT",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SCORING_TEAM_MEMBERS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_THREADS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_ATTRIBUTE_VALUES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_ORG_ASSIGNMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_SECTIONS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENTS_INT",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SCORING_TEAMS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SCORES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BUYER_ACTIVITIES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_SHIPMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ICF_VALUES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_TEAM_REQUIREMENT_SCORES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENT_VALUES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SECTIONS_INT",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PRICE_ELEMENTS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS_HISTORY",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES_HISTORY",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_NEG_TEAM_MEMBERS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_LINE_ICF_SUMMARY",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_NEG_TERMS_ACCEPTANCE",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BID_HEADERS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ACCESS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_ORIG_AMEND"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ACCESS",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ACTIVITIES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ACTIVITIES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID_ORIG_AMEND"
+  },
+  {
+    "fromTable": "PON_TEAM_BID_SCORES",
+    "toTable": "PON_AUCTION_HEADERS_ALL",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BEST_BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BEST_BID_BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, PARENT_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_ITEM_PRICES",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, AUCTION_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_PARTY_LINE_EXCLUSIONS",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, AUCTION_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_PRICE_ELEMENTS",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_SHIPMENTS",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BACKING_REQ_HISTORY",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_AUCTION_SHIPMENTS_ALL",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES_HISTORY",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, AUCTION_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BACKING_REQUISITIONS",
+    "toTable": "PON_AUCTION_ITEM_PRICES_ALL",
+    "column": "AUCTION_HEADER_ID, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_AUCTION_SUMMARY",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_AUCTION_SUMMARY",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PON_DOCTYPE_STYLES_B",
+    "toTable": "PON_AUC_DOCTYPES_B",
+    "column": "DOCTYPE_ID"
+  },
+  {
+    "fromTable": "PON_AUC_DOCTYPES_TL",
+    "toTable": "PON_AUC_DOCTYPES_B",
+    "column": "DOCTYPE_ID"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, BID_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_AWARD_ALLOCATIONS_HISTORY",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, BID_LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BIDDING_PARTY_CONTACTS",
+    "toTable": "PON_BIDDING_PARTIES",
+    "column": "AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_BIDDING_PARTY_CONTACTS",
+    "toTable": "PON_BIDDING_PARTIES",
+    "column": "LIST_ID"
+  },
+  {
+    "fromTable": "PON_BIDDING_PARTY_CONTACTS",
+    "toTable": "PON_BIDDING_PARTIES",
+    "column": "SEQUENCE"
+  },
+  {
+    "fromTable": "PON_BIDDING_PARTY_CONTACTS",
+    "toTable": "PON_BIDDING_PARTIES",
+    "column": "TRADING_PARTNER_ID"
+  },
+  {
+    "fromTable": "PON_BIDDING_PARTY_CONTACTS",
+    "toTable": "PON_BIDDING_PARTIES",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "PON_BIDDING_TERMS_TL",
+    "toTable": "PON_BIDDING_TERMS_B",
+    "column": "PRC_BU_ID, VERSION_NUM, APPLICATION_ID"
+  },
+  {
+    "fromTable": "PON_BID_HEADERS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "OLD_BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_HEADERS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "PON_BID_ITEM_PRICES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_ITEM_PRICES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "TRIGGER_BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENTS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_NUMBERS_HISTORY",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_ORG_ASSIGNMENTS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_SECTIONS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_SHIPMENTS",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_TEAM_REQUIREMENT_SCORES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENT_VALUES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES_HISTORY",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_TEAM_BID_SCORES",
+    "toTable": "PON_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PRICE_ELEMENTS",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES_HISTORY",
+    "toTable": "PON_BID_ITEM_PRICES",
+    "column": "BID_NUMBER, LINE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES",
+    "toTable": "PON_BID_PO_NUMBERS",
+    "column": "BID_NUMBER, SEQUENCE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_LINES_HISTORY",
+    "toTable": "PON_BID_PO_NUMBERS",
+    "column": "BID_NUMBER, SEQUENCE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_PO_ORG_ASSIGNMENTS",
+    "toTable": "PON_BID_PO_NUMBERS",
+    "column": "BID_NUMBER, PO_SEQUENCE_NUMBER"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENTS",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENTS",
+    "toTable": "PON_REQUIREMENT_SECTIONS",
+    "column": "SECTION_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MAPPINGS",
+    "toTable": "PON_BID_REQUIREMENTS",
+    "column": "PON_RESPONSE_HDR_ID, PON_RESPONSE_ID"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENT_VALUES",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_BID_REQUIREMENT_VALUES",
+    "toTable": "PON_REQUIREMENT_SCORES",
+    "column": "SCORE_ID"
+  },
+  {
+    "fromTable": "PON_BID_SECTIONS",
+    "toTable": "PON_REQUIREMENT_SECTIONS",
+    "column": "SECTION_ID"
+  },
+  {
+    "fromTable": "PON_DOCTYPE_STYLES_B",
+    "toTable": "PON_NEGOTIATION_STYLES_B",
+    "column": "STYLE_ID"
+  },
+  {
+    "fromTable": "PON_DOCTYPE_STYLES_TL",
+    "toTable": "PON_DOCTYPE_STYLES_B",
+    "column": "DOCTYPE_ID, STYLE_ID"
+  },
+  {
+    "fromTable": "PON_LIST_PRICE_ELEMENTS",
+    "toTable": "PON_PRICE_ELEMENT_LISTS",
+    "column": "LIST_ID"
+  },
+  {
+    "fromTable": "PON_LIST_PRICE_ELEMENTS",
+    "toTable": "PON_PRICE_ELEMENT_TYPES_B",
+    "column": "PRICE_ELEMENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_NEGOTIATION_STYLES_TL",
+    "toTable": "PON_NEGOTIATION_STYLES_B",
+    "column": "STYLE_ID"
+  },
+  {
+    "fromTable": "PON_OBJECTIVE_NEGOTIATIONS",
+    "toTable": "PON_PROGRAM_HEADERS",
+    "column": "PROGRAM_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_OBJECTIVE_NEGOTIATIONS",
+    "toTable": "PON_PROGRAM_OBJECTIVES",
+    "column": "OBJECTIVE_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_PRICE_ELEMENTS",
+    "toTable": "PON_PRICE_ELEMENT_TYPES_B",
+    "column": "PRICE_ELEMENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_PRICE_ELEMENT_TYPES_TL",
+    "toTable": "PON_PRICE_ELEMENT_TYPES_B",
+    "column": "PRICE_ELEMENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_SUPPLIER_ICF_VALUES",
+    "toTable": "PON_PRICE_ELEMENT_TYPES_B",
+    "column": "PRICE_ELEMENT_TYPE_ID"
+  },
+  {
+    "fromTable": "PON_PROGRAM_OBJECTIVES",
+    "toTable": "PON_PROGRAM_HEADERS",
+    "column": "PROGRAM_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_PROGRAM_TEAM_MEMBERS",
+    "toTable": "PON_PROGRAM_HEADERS",
+    "column": "PROGRAM_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENTS",
+    "toTable": "PON_REQUIREMENT_SECTIONS",
+    "column": "SECTION_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENTS",
+    "toTable": "PON_REQUIREMENT_SCORES",
+    "column": "SCORE_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SCORES_INT",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENTS_INT",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_REQUIREMENT_SCORES",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_TEAM_REQUIREMENT_SCORES",
+    "toTable": "PON_REQUIREMENTS",
+    "column": "REQUIREMENT_ID"
+  },
+  {
+    "fromTable": "PON_SCORING_TEAM_MEMBERS",
+    "toTable": "PON_SCORING_TEAMS",
+    "column": "AUCTION_HEADER_ID, TEAM_ID"
+  },
+  {
+    "fromTable": "PON_SELLER_AUCTION_BIDDERS",
+    "toTable": "PON_SELLER_AUCTION_HEADERS",
+    "column": "SELLER_AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SELLER_AUCTION_LINES",
+    "toTable": "PON_SELLER_AUCTION_HEADERS",
+    "column": "SELLER_AUCTION_HEADER_ID"
+  },
+  {
+    "fromTable": "PON_SELLER_AUC_BID_LINES",
+    "toTable": "PON_SELLER_AUCTION_LINES",
+    "column": "SELLER_AUCTION_HEADER_ID, LINE_ID"
+  },
+  {
+    "fromTable": "PON_SELLER_AUC_BID_LINES",
+    "toTable": "PON_SELLER_AUC_BID_HEADERS",
+    "column": "BID_NUMBER"
+  },
+  {
+    "fromTable": "PON_THREAD_MESSAGES",
+    "toTable": "PON_THREADS",
+    "column": "THREAD_ID"
+  },
+  {
+    "fromTable": "PON_THREAD_MESSAGES",
+    "toTable": "PON_THREAD_MESSAGES",
+    "column": "PARENT_MESSAGE_ID"
+  },
+  {
+    "fromTable": "PON_THREAD_MESSAGE_RECIPIENTS",
+    "toTable": "PON_THREAD_MESSAGES",
+    "column": "MESSAGE_ID"
+  },
+  {
+    "fromTable": "POI_CLSF_BATCHES_TL",
+    "toTable": "POI_CLSF_BATCHES_B",
+    "column": "BATCH_ID"
+  },
+  {
+    "fromTable": "POI_SA_MODEL_OP",
+    "toTable": "POI_SA_MODEL",
+    "column": "MODEL_NAME"
+  },
+  {
+    "fromTable": "POZ_ACNT_ADDR_REQS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_ADDR_REQS",
+    "toTable": "POZ_ADDRESS_REQUESTS",
+    "column": "ADDRESS_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_ADDR_REQS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_ADDR_SUMM_REQS",
+    "toTable": "POZ_ACNT_ADDR_REQS",
+    "column": "ASSIGNMENT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_ADDR_SUMM_REQS",
+    "toTable": "POZ_ACNT_GEN_REQS",
+    "column": "ACCOUNT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_GEN_REQS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_ACNT_GEN_REQS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_ADDRESS_REQUESTS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_ADDRESS_REQUESTS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_ADDRESS_REQUESTS",
+    "column": "ADDRESS_REQ_ID"
+  },
+  {
+    "fromTable": "POZ_APPROVAL_HISTORY",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_B2B_DOCUMENT_CONFIGS",
+    "toTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "POZ_BUS_CLASSIFICATIONS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_BUS_CLASS_REQS",
+    "toTable": "POZ_BUS_CLASSIFICATIONS",
+    "column": "CLASSIFICATION_ID"
+  },
+  {
+    "fromTable": "POZ_BUS_CLASS_REQS",
+    "toTable": "POZ_BUS_CLASSIFICATIONS",
+    "column": "CLASSIFICATION_ID_ORIGINAL"
+  },
+  {
+    "fromTable": "POZ_BUS_CLASS_REQS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_BUS_CLASS_REQS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_BUS_CLASS_REQUESTS",
+    "toTable": "POZ_BUS_CLASS_REQS",
+    "column": "SUPP_BUS_CLASS_RQST_ID"
+  },
+  {
+    "fromTable": "POZ_CERT_AGENCY_CLASSFNS",
+    "toTable": "POZ_CERTIFYING_AGENCIES",
+    "column": "AGENCY_ID"
+  },
+  {
+    "fromTable": "POS_USER_ACCESS_VALUES",
+    "toTable": "POZ_CONTACT_ATTRIBUTES",
+    "column": "PER_PARTY_ID"
+  },
+  {
+    "fromTable": "POZ_CONTACT_ATTRIBUTE_REQUEST",
+    "toTable": "POZ_CONTACT_REQUESTS",
+    "column": "CONTACT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POS_USER_ACCESS_VAL_REQUESTS",
+    "toTable": "POZ_CONTACT_ATTRIBUTE_REQUEST",
+    "column": "CONTACT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_CONTACT_REQUESTS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_CONTACT_REQUESTS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_CONTACT_REQUESTS",
+    "column": "CONTACT_REQ_ID"
+  },
+  {
+    "fromTable": "POZ_UP_REQUESTS",
+    "toTable": "POZ_CONTACT_REQUESTS",
+    "column": "CONTACT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_PRODUCT_SERVICE_REQUESTS",
+    "toTable": "POZ_SUPPLIER_MAPPINGS",
+    "column": "MAPPING_ID"
+  },
+  {
+    "fromTable": "POZ_PRODUCT_SERVICE_REQUESTS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_SITE_ASSIGNMENTS_ALL_M",
+    "toTable": "POZ_SUPPLIER_MERGE_REQUESTS",
+    "column": "MERGE_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SPEND_AUTH_REQUESTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIERS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "PARENT_VENDOR_ID"
+  },
+  {
+    "fromTable": "POQ_INITIATIVE_SUPPLIERS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "SUPPLIER_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIERS_PII",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POQ_QUALIFICATIONS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "SUPPLIER_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_SITE_REQUESTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MERGE_REQUESTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "FROM_VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MERGE_REQUESTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "TO_VENDOR_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "SUPPLIER_ID"
+  },
+  {
+    "fromTable": "POZ_SUP_PRODUCTS_SERVICES",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MAPPINGS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_REQUESTS",
+    "toTable": "POZ_SUPPLIERS",
+    "column": "VENDOR_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MAPPINGS",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_MAPPINGS",
+    "toTable": "POQ_QUESTNAIRE_RESPONSES",
+    "column": "POQ_QUESTNAIRE_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_NEWS_TL",
+    "toTable": "POZ_SUPPLIER_NEWS_B",
+    "column": "SUPPLIER_NEWS_ID"
+  },
+  {
+    "fromTable": "POZ_SUP_REG_PII",
+    "toTable": "POZ_SUPPLIER_REGISTRATIONS",
+    "column": "SUPPLIER_REG_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_BANK_ACCT_REQUESTS",
+    "toTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "POZ_SUPPLIER_SITES_PII",
+    "toTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_PMT_METHOD_REQUESTS",
+    "toTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "POZ_SUP_THIRDPARTY_PAYMENT_REL",
+    "toTable": "POZ_SUPPLIER_SITES_ALL_M",
+    "column": "VENDOR_SITE_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_ACCT_OWNER_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_SUPP_ADDRESS_REQUESTS",
+    "column": "SUPP_ADDRESS_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_BANK_ACCT_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_BUS_CLASS_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_CONTACT_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_SUPP_CONTACT_REQUESTS",
+    "column": "SUPP_CONTACT_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_CONT_ADDR_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_INTERM_ACCT_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_ORG_DETAILS_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_PMT_METHOD_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_PROD_SERV_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_REQUESTS_PII",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_TEMP_BANK_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_SITE_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_TPP_REL_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_TAX_DETAILS_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_SITE_ASSIGN_REQUESTS",
+    "toTable": "POZ_SUPP_REQUESTS",
+    "column": "SUPP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_SUPP_TPP_REL_REQUESTS",
+    "toTable": "POZ_SUPP_SITE_REQUESTS",
+    "column": "SITE_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_UP_ROLE_REQUESTS",
+    "toTable": "POZ_UP_REQUESTS",
+    "column": "UP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POZ_UP_USER_REQUESTS",
+    "toTable": "POZ_UP_REQUESTS",
+    "column": "UP_REQUEST_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENTS",
+    "toTable": "POQ_QUAL_MODELS",
+    "column": "QUAL_MODEL_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENTS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENT_QUALS",
+    "toTable": "POQ_ASSESSMENTS",
+    "column": "ASSESSMENT_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENT_QUALS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_ASSESSMENT_QUALS",
+    "toTable": "POQ_QUALIFICATIONS",
+    "column": "QUALIFICATION_ID"
+  },
+  {
+    "fromTable": "POQ_AUTO_ERROR_ATTRIBUTES",
+    "toTable": "POQ_AUTOMATION_ERRORS",
+    "column": "AUTO_ERROR_ATTR_ID"
+  },
+  {
+    "fromTable": "POQ_EVALUATION_TEAM",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_INITIATIVES",
+    "toTable": "POQ_QUAL_MODELS",
+    "column": "QUAL_MODEL_ID"
+  },
+  {
+    "fromTable": "POQ_INITIATIVE_SUPPLIERS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_INIT_QUAL_AREAS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_QUALIFICATIONS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_HEADERS",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRES_B",
+    "toTable": "POQ_INITIATIVES",
+    "column": "INITIATIVE_ID"
+  },
+  {
+    "fromTable": "POQ_INIT_QUAL_AREAS",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QNAIRE_RULES",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_ID"
+  },
+  {
+    "fromTable": "POQ_QNAIRE_RULE_ENTITY",
+    "toTable": "POQ_QNAIRE_RULES",
+    "column": "QUESTNAIRE_RULE_ID"
+  },
+  {
+    "fromTable": "POQ_QUALIFICATIONS",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_RESPONSES",
+    "toTable": "POQ_QUALIFICATIONS",
+    "column": "QUALIFICATION_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_AREA_OUTCOMES",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_AREA_BU_ACCESSES",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_AREA_QUESTIONS",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_MODEL_AREAS",
+    "toTable": "POQ_QUAL_AREAS_B",
+    "column": "QUAL_AREA_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_AREA_QUESTIONS",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_MODEL_BU_ACCESSES",
+    "toTable": "POQ_QUAL_MODELS",
+    "column": "QUAL_MODEL_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_MODEL_AREAS",
+    "toTable": "POQ_QUAL_MODELS",
+    "column": "QUAL_MODEL_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_MODEL_OUTCOMES",
+    "toTable": "POQ_QUAL_MODELS",
+    "column": "QUAL_MODEL_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_RESPONSES",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUAL_RESPONSES",
+    "toTable": "POQ_RESPONSE_REPOSITORY",
+    "column": "RESPONSE_REPOSITORY_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTIONS_B",
+    "toTable": "POQ_SUPPLIER_ATTRIBUTES_B",
+    "column": "SUPPLIER_ATTRIBUTE_CODE"
+  },
+  {
+    "fromTable": "POQ_QUESTION_SCORES",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESPONSES",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUES_ACC_RESPONSES_B",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_ACC_RESPS",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTION_BRANCHES",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "BRANCH_TO_QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_RESP_REPOS_INT",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_QUESTIONS",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_RESPONSE_REPOSITORY",
+    "toTable": "POQ_QUESTIONS_B",
+    "column": "QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTION_BRANCHES",
+    "toTable": "POQ_QUES_ACC_RESPONSES_B",
+    "column": "ACC_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_ACC_RESPS",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_QUESTIONS",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_HEADERS",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_RESP_HEADER_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_SECTIONS_B",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_ID"
+  },
+  {
+    "fromTable": "POQ_REMOVED_QUESTIONS",
+    "toTable": "POQ_QUESTNAIRES_B",
+    "column": "QUESTNAIRE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_ACC_RESPS",
+    "toTable": "POQ_QUES_ACC_RESPONSES_B",
+    "column": "ACC_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_QUESTIONS",
+    "toTable": "POQ_QUESTNAIRE_SECTIONS_B",
+    "column": "QUESTNAIRE_SECTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESPONSES",
+    "toTable": "POQ_QUESTNAIRE_QUESTIONS",
+    "column": "QUESTNAIRE_QUESTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESPONSES",
+    "toTable": "POQ_QUESTNAIRE_RESP_HEADERS",
+    "column": "QUESTNAIRE_RESP_HEADER_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESPONSES",
+    "toTable": "POQ_QUESTNAIRE_RESP_SECTIONS",
+    "column": "QUESTNAIRE_RESP_SECTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_VALUES",
+    "toTable": "POQ_QUESTNAIRE_RESPONSES",
+    "column": "QUESTNAIRE_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_SECTIONS",
+    "toTable": "POQ_QUESTNAIRE_RESP_HEADERS",
+    "column": "QUESTNAIRE_RESP_HEADER_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_SECTIONS",
+    "toTable": "POQ_QUESTNAIRE_SECTIONS_B",
+    "column": "QUESTNAIRE_SECTION_ID"
+  },
+  {
+    "fromTable": "POQ_QUESTNAIRE_RESP_VALUES",
+    "toTable": "POQ_QUES_ACC_RESPONSES_B",
+    "column": "ACC_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POQ_RESP_REPOSITORY_VALUES",
+    "toTable": "POQ_QUES_ACC_RESPONSES_B",
+    "column": "ACC_RESPONSE_ID"
+  },
+  {
+    "fromTable": "POQ_RESP_REPOSITORY_VALUES",
+    "toTable": "POQ_RESPONSE_REPOSITORY",
+    "column": "RESPONSE_REPOSITORY_ID"
+  },
+  {
+    "fromTable": "POQ_RESP_REPOS_BUS_CLASS",
+    "toTable": "POQ_RESPONSE_REPOSITORY",
+    "column": "RESPONSE_REPOSITORY_ID"
+  },
+  {
+    "fromTable": "POQ_RESP_REPOS_VALUE_INT",
+    "toTable": "POQ_RESP_REPOS_INT",
+    "column": "RESP_REPOS_INTERFACE_ID"
+  },
+  {
+    "fromTable": "POQ_RULES",
+    "toTable": "POQ_RULE_SETS_B",
+    "column": "RULE_SET_ID"
+  },
+  {
+    "fromTable": "POQ_RULES",
+    "toTable": "POQ_RULES",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "POQ_RULE_AREA_QUESTIONS",
+    "toTable": "POQ_RULES",
+    "column": "RULE_ID"
+  },
+  {
+    "fromTable": "POQ_RULE_SET_BU_ASSIGNMENTS",
+    "toTable": "POQ_RULE_SETS_B",
+    "column": "RULE_SET_ID"
+  },
+  {
+    "fromTable": "POQ_SUPPLIER_ATTRIBUTES_TL",
+    "toTable": "POQ_SUPPLIER_ATTRIBUTES_B",
+    "column": "SUPPLIER_ATTRIBUTE_CODE"
+  }
+]
