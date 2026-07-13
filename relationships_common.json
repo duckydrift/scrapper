@@ -1,0 +1,427 @@
+[
+  {
+    "fromTable": "FND_DIAG_TAG",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "ENTERPRISE_ID, MODULE_ID"
+  },
+  {
+    "fromTable": "FND_GRANTS_BK",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_OBJECTS",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_MENUS",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_GRANTS",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_OBJECTS_BK",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_MENUS_BK",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "MODULE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_FORM_FUNCTIONS",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "ENTERPRISE_ID, MODULE_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TEST",
+    "toTable": "FND_APPL_TAXONOMY",
+    "column": "ENTERPRISE_ID, MODULE_ID"
+  },
+  {
+    "fromTable": "FND_BOSS_HS_BV_TO_INDEX",
+    "toTable": "FND_BOSS_HS_INDICES",
+    "column": "REFERENCE_INDEX_ID"
+  },
+  {
+    "fromTable": "FND_BPM_TASK_ATTRIBUTES_B",
+    "toTable": "FND_BPM_TASK_COMPOSITES_B",
+    "column": "TASK_COMPOSITE_ID"
+  },
+  {
+    "fromTable": "FND_CONSOLE_ISSUE",
+    "toTable": "FND_CONSOLE_TRANSACTION_INFO",
+    "column": "CONSOLE_TRANSACTION_ID"
+  },
+  {
+    "fromTable": "FND_CURRENCIES_B",
+    "toTable": "FND_TERRITORIES_B",
+    "column": "ISSUING_TERRITORY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_TERRITORIES_B",
+    "toTable": "FND_CURRENCIES_B",
+    "column": "CURRENCY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_CURRENCIES_TL",
+    "toTable": "FND_CURRENCIES_B",
+    "column": "CURRENCY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_EXECUTION",
+    "toTable": "FND_DIAG_RUN",
+    "column": "ENTERPRISE_ID, RUN_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_EXECUTION",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_EXECUTION",
+    "toTable": "FND_DIAG_EXECUTION",
+    "column": "ENTERPRISE_ID, PARENT_EXECUTION_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_INPUTSET",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_INPUTSET_TL",
+    "toTable": "FND_DIAG_INPUTSET",
+    "column": "ENTERPRISE_ID, INPUTSET_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_INPUTSET_NAME_VALUE",
+    "toTable": "FND_DIAG_INPUTSET",
+    "column": "ENTERPRISE_ID, INPUTSET_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TAG_TL",
+    "toTable": "FND_DIAG_TAG",
+    "column": "ENTERPRISE_ID, TAG_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TAG_VALUE_TL",
+    "toTable": "FND_DIAG_TAG_VALUE",
+    "column": "ENTERPRISE_ID, TAG_VALUE_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TAG_VALUE_HIERARCHY",
+    "toTable": "FND_DIAG_TAG_VALUE",
+    "column": "ENTERPRISE_ID, CHILD_TAG_VALUE_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TAG_VALUE_HIERARCHY",
+    "toTable": "FND_DIAG_TAG_VALUE",
+    "column": "ENTERPRISE_ID, PARENT_TAG_VALUE_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TAG_VALUE_TEST_ASSOC",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TEST_TL",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TEST_PARAM",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DIAG_TEST_PARAM_TL",
+    "toTable": "FND_DIAG_TEST",
+    "column": "ENTERPRISE_ID, TEST_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_USERS",
+    "toTable": "FND_DOCUMENT_SEQUENCES",
+    "column": "DOC_SEQUENCE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_ASSIGNMENTS",
+    "toTable": "FND_DOCUMENT_SEQUENCES",
+    "column": "DOC_SEQUENCE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_AUDIT",
+    "toTable": "FND_DOCUMENT_SEQUENCES",
+    "column": "DOC_SEQUENCE_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPE_TO_LAW_B",
+    "toTable": "FND_DOC_LAWS_B",
+    "column": "FND_DOC_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_LAWS_TL",
+    "toTable": "FND_DOC_LAWS_B",
+    "column": "FND_DOC_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_RULES",
+    "toTable": "FND_DOC_LAWS_B",
+    "column": "FND_DOC_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_RULES_BK",
+    "toTable": "FND_DOC_LAWS_B",
+    "column": "FND_DOC_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPE_TO_LAW_B_BK",
+    "toTable": "FND_DOC_LAWS_B",
+    "column": "FND_DOC_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_RULES",
+    "toTable": "FND_DOC_SCOPES_B",
+    "column": "FND_DOC_SCOPE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_RULES_BK",
+    "toTable": "FND_DOC_SCOPES_B",
+    "column": "FND_DOC_SCOPE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPE_TO_LAW_B",
+    "toTable": "FND_DOC_SCOPES_B",
+    "column": "FND_DOC_SCOPE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPE_TO_LAW_B_BK",
+    "toTable": "FND_DOC_SCOPES_B",
+    "column": "FND_DOC_SCOPE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPES_TL",
+    "toTable": "FND_DOC_SCOPES_B",
+    "column": "FND_DOC_SCOPE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SCOPE_TO_LAW_TL",
+    "toTable": "FND_DOC_SCOPE_TO_LAW_B",
+    "column": "FND_DOC_SCOPE_TO_LAW_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_ASSIGNMENTS",
+    "toTable": "FND_DOC_SEQUENCE_CATEGORIES",
+    "column": "APPLICATION_ID, CATEGORY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_USERS",
+    "toTable": "FND_DOC_SEQUENCE_ASSIGNMENTS",
+    "column": "DOC_SEQUENCE_ASSIGNMENT_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_DOC_SEQUENCE_AUDIT",
+    "toTable": "FND_DOC_SEQUENCE_ASSIGNMENTS",
+    "column": "DOC_SEQUENCE_ASSIGNMENT_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_EDP_PROT_FIELDS_TL",
+    "toTable": "FND_EDP_PROT_FIELDS_B",
+    "column": "PROT_FIELD_ID"
+  },
+  {
+    "fromTable": "FND_EVB_DICTIONARY_ATTR_USAGE",
+    "toTable": "FND_EVB_DICTIONARY_FACT",
+    "column": "FACT_ID"
+  },
+  {
+    "fromTable": "FND_EVB_DICTIONARY_FACT",
+    "toTable": "FND_EVB_DICTIONARY_ID",
+    "column": "DICTIONARY_ID"
+  },
+  {
+    "fromTable": "FND_EVB_DICTIONARY_LINKS",
+    "toTable": "FND_EVB_DICTIONARY_ID",
+    "column": "MAIN_DICTIONARY_ID"
+  },
+  {
+    "fromTable": "FND_INDUSTRY_IN_TERRITORY",
+    "toTable": "FND_INDUSTRIES_B",
+    "column": "INDUSTRY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_INDUSTRIES_TL",
+    "toTable": "FND_INDUSTRIES_B",
+    "column": "INDUSTRY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_INDUSTRY_IN_TERRITORY",
+    "toTable": "FND_TERRITORIES_B",
+    "column": "TERRITORY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_ISO_LANGUAGES_TL",
+    "toTable": "FND_ISO_LANGUAGES_B",
+    "column": "ISO_LANGUAGE_3, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_LANGUAGES_TL",
+    "toTable": "FND_LANGUAGES_B",
+    "column": "LANGUAGE_CODE"
+  },
+  {
+    "fromTable": "FND_MAP_ATTACH_DOCS",
+    "toTable": "FND_MAP_ATTACH_ENTITY",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MAP_MERGE_FLEX_DFF",
+    "toTable": "FND_MAP_FLEX_DFF",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MAP_FLEX_EFF_USAGES",
+    "toTable": "FND_MAP_FLEX_DFF",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MAP_FLEX_DFF_COLUMNS",
+    "toTable": "FND_MAP_FLEX_DFF",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MAP_FLEX_EFF_CATEGORIES",
+    "toTable": "FND_MAP_FLEX_DFF",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MAP_FLEX_KFF_COLUMNS",
+    "toTable": "FND_MAP_FLEX_KFF",
+    "column": "PARENT_MAP_ID"
+  },
+  {
+    "fromTable": "FND_MESSAGES_TL",
+    "toTable": "FND_MESSAGES_B",
+    "column": "APPLICATION_ID, MESSAGE_NAME, ENTERPRISE_ID, SANDBOX_ID"
+  },
+  {
+    "fromTable": "FND_MESSAGE_TOKENS",
+    "toTable": "FND_MESSAGES_B",
+    "column": "APPLICATION_ID, MESSAGE_NAME, ENTERPRISE_ID, SANDBOX_ID"
+  },
+  {
+    "fromTable": "FND_MESSAGES_TL_BK",
+    "toTable": "FND_MESSAGES_B_BK",
+    "column": "APPLICATION_ID, MESSAGE_NAME, ENTERPRISE_ID, CUST_SET_ID"
+  },
+  {
+    "fromTable": "FND_MESSAGE_TOKENS_BK",
+    "toTable": "FND_MESSAGES_B_BK",
+    "column": "APPLICATION_ID, MESSAGE_NAME, ENTERPRISE_ID, CUST_SET_ID"
+  },
+  {
+    "fromTable": "FND_NATURAL_LANGUAGES_TL",
+    "toTable": "FND_NATURAL_LANGUAGES_B",
+    "column": "LANGUAGE_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_CAT_OPTIONS_B",
+    "toTable": "FND_PROFILE_CATS_B",
+    "column": "CATEGORY_NAME, APPLICATION_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_CATS_TL",
+    "toTable": "FND_PROFILE_CATS_B",
+    "column": "NAME, APPLICATION_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_CAT_OPTIONS_B",
+    "toTable": "FND_PROFILE_OPTIONS_B",
+    "column": "ENTERPRISE_ID, APPLICATION_ID, PROFILE_OPTION_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_OPTIONS_B",
+    "toTable": "FND_PROFILE_HIERARCHIES",
+    "column": "HIERARCHY_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_HIERARCHY_LEVELS",
+    "toTable": "FND_PROFILE_HIERARCHIES",
+    "column": "HIERARCHY_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_HIERARCHY_LEVELS",
+    "toTable": "FND_PROFILE_LEVELS",
+    "column": "LEVEL_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_OPTION_VALUES",
+    "toTable": "FND_PROFILE_LEVELS",
+    "column": "LEVEL_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_OPTION_LEVELS",
+    "toTable": "FND_PROFILE_LEVELS",
+    "column": "LEVEL_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_OPTION_VALUES",
+    "toTable": "FND_PROFILE_OPTIONS_B",
+    "column": "APPLICATION_ID, PROFILE_OPTION_ID, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_PROFILE_OPTIONS_TL",
+    "toTable": "FND_PROFILE_OPTIONS_B",
+    "column": "PROFILE_OPTION_NAME, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_SAVED_SEARCH_TL",
+    "toTable": "FND_SAVED_SEARCH_B",
+    "column": "SAVED_SEARCH_ID"
+  },
+  {
+    "fromTable": "FND_SEARCH_RESULTS",
+    "toTable": "FND_SEARCH_LOG",
+    "column": "FND_SEARCH_ID"
+  },
+  {
+    "fromTable": "FND_SEARCH_VIEW_OPTIONS",
+    "toTable": "FND_SEARCH_OPTIONS_B",
+    "column": "ENTERPRISE_ID, SEARCH_OPTION_ID"
+  },
+  {
+    "fromTable": "FND_SEARCH_OPTIONS_TL",
+    "toTable": "FND_SEARCH_OPTIONS_B",
+    "column": "ENTERPRISE_ID, SEARCH_OPTION_ID"
+  },
+  {
+    "fromTable": "FND_SUGGEST_GROUPS_TL",
+    "toTable": "FND_SUGGEST_GROUPS_B",
+    "column": "ENTERPRISE_ID, SUGGEST_GROUP_ID"
+  },
+  {
+    "fromTable": "FND_SYNONYMS_TL",
+    "toTable": "FND_SYNONYMS_B",
+    "column": "SYNONYM_ID"
+  },
+  {
+    "fromTable": "FND_TERRITORIES_TL",
+    "toTable": "FND_TERRITORIES_B",
+    "column": "TERRITORY_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_TIMEZONES_TL",
+    "toTable": "FND_TIMEZONES_B",
+    "column": "TIMEZONE_CODE, ENTERPRISE_ID"
+  },
+  {
+    "fromTable": "FND_TREE_LOG_PARAMS",
+    "toTable": "FND_TREE_LOG",
+    "column": "LOG_ENTRY_ID, ENTERPRISE_ID"
+  }
+]

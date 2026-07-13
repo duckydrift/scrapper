@@ -50,6 +50,26 @@
     "column": "PROMISE_DETAIL_ID"
   },
   {
+    "fromTable": "IEX_CUSTOMER_MSG_DETAILS",
+    "toTable": "RA_CUSTOMER_TRX_ALL",
+    "column": "CUSTOMER_TRX_ID"
+  },
+  {
+    "fromTable": "IEX_CUSTOMER_MSG_DETAILS",
+    "toTable": "AR_PAYMENT_SCHEDULES_ALL",
+    "column": "PAYMENT_SCHEDULE_ID"
+  },
+  {
+    "fromTable": "IEX_CUSTOMER_MSG_DETAILS",
+    "toTable": "AR_CASH_RECEIPTS_ALL",
+    "column": "CASH_RECEIPT_ID"
+  },
+  {
+    "fromTable": "IEX_CUSTOMER_MSG_DETAILS",
+    "toTable": "FUN_EMAIL_IO_MESSAGES",
+    "column": "MESSAGE_ID"
+  },
+  {
     "fromTable": "IEX_DELINQUENCIES_ALL",
     "toTable": "AR_PAYMENT_SCHEDULES_ALL",
     "column": "PAYMENT_SCHEDULE_ID"
@@ -2815,6 +2835,11 @@
     "column": "BANK_ACCOUNT_ID"
   },
   {
+    "fromTable": "AR_BANK_STMT_REFERENCE_TAGS",
+    "toTable": "CE_BANK_ACCOUNTS",
+    "column": "BANK_ACCOUNT_ID"
+  },
+  {
     "fromTable": "CE_EXTERNAL_TRANSACTIONS",
     "toTable": "CE_BANK_ACCOUNTS",
     "column": "BANK_ACCOUNT_ID"
@@ -3045,6 +3070,21 @@
     "column": "PGM_THIRD_PTY_CANDIDATE_ID"
   },
   {
+    "fromTable": "CE_FIN_PROGRAM_OFFERS",
+    "toTable": "CE_PAYMENT_INSTRUMENTS",
+    "column": "PAYMENT_INSTRUMENT_ID"
+  },
+  {
+    "fromTable": "CE_FIN_PROGRAM_OFFERS",
+    "toTable": "IBY_PAYMENT_METHODS_B",
+    "column": "PAYMENT_METHOD_CODE"
+  },
+  {
+    "fromTable": "CE_FIN_PROGRAM_OFFERS",
+    "toTable": "AP_TERMS_B",
+    "column": "OVERRIDE_PAYMENT_TERM_ID"
+  },
+  {
     "fromTable": "AP_INVOICE_PAYMENTS_ALL",
     "toTable": "CE_FIN_PROGRAM_OFFERS",
     "column": "FIN_PROGRAM_OFFER_ID"
@@ -3195,6 +3235,16 @@
     "column": "RECONCILIATION_DIFFERENCE_CCID"
   },
   {
+    "fromTable": "CE_PGM_THIRD_PTY_CANDIDATES",
+    "toTable": "CE_PAYMENT_INSTRUMENTS",
+    "column": "PAYMENT_INSTRUMENT_ID"
+  },
+  {
+    "fromTable": "CE_PGM_THIRD_PARTY_CAND_HIST",
+    "toTable": "CE_PAYMENT_INSTRUMENTS",
+    "column": "PAYMENT_INSTRUMENT_ID"
+  },
+  {
     "fromTable": "IBY_VCARD_PROGRAM_FCA_USES",
     "toTable": "CE_PAYMENT_INSTRUMENTS",
     "column": "PAYMENT_INSTRUMENT_ID"
@@ -3215,9 +3265,29 @@
     "column": "PRIOR_THIRD_PARTY_CAND_HIST_ID"
   },
   {
+    "fromTable": "CE_PGM_THIRD_PARTY_CAND_HIST",
+    "toTable": "IBY_PAYMENT_METHODS_B",
+    "column": "PAYMENT_METHOD_CODE"
+  },
+  {
+    "fromTable": "CE_PGM_THIRD_PARTY_CAND_HIST",
+    "toTable": "AP_TERMS_B",
+    "column": "OVERRIDE_PAYMENT_TERM_ID"
+  },
+  {
     "fromTable": "CE_PGM_THIRD_PTY_ENROLLMENT",
     "toTable": "CE_PGM_THIRD_PARTY_CAND_HIST",
     "column": "PGM_THIRD_PARTY_CAND_HIST_ID"
+  },
+  {
+    "fromTable": "CE_PGM_THIRD_PTY_CANDIDATES",
+    "toTable": "IBY_PAYMENT_METHODS_B",
+    "column": "PAYMENT_METHOD_CODE"
+  },
+  {
+    "fromTable": "CE_PGM_THIRD_PTY_CANDIDATES",
+    "toTable": "AP_TERMS_B",
+    "column": "OVERRIDE_PAYMENT_TERM_ID"
   },
   {
     "fromTable": "CE_PGM_THIRD_PTY_ENROLLMENT",
@@ -3705,6 +3775,11 @@
     "column": "EXPENSE_TEMPLATE_ID"
   },
   {
+    "fromTable": "EXM_EXPENSE_TYPES",
+    "toTable": "IBY_VCARD_PROGRAMS_B",
+    "column": "VCARD_PROGRAM_ID"
+  },
+  {
     "fromTable": "EXM_PROJECT_EXP_TYPE_MAPS",
     "toTable": "EXM_EXPENSE_TYPES",
     "column": "EXPENSE_TYPE_ID"
@@ -4093,6 +4168,26 @@
     "fromTable": "FUN_DIST_LINES",
     "toTable": "FUN_INTERCO_ORGANIZATIONS",
     "column": "PARTY_ID"
+  },
+  {
+    "fromTable": "AR_TRANSMISSIONS_ALL",
+    "toTable": "FUN_DOCIO_INCOMING_DOCUMENTS",
+    "column": "DOCIO_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "IBY_INBOUND_FILE",
+    "toTable": "FUN_DOCIO_INCOMING_DOCUMENTS",
+    "column": "DOCIO_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "AR_REMITTANCE_ADVICES_ALL",
+    "toTable": "FUN_DOCIO_INCOMING_DOCUMENTS",
+    "column": "DOCIO_DOCUMENT_ID"
+  },
+  {
+    "fromTable": "FUN_EMAIL_IO_MSG_ATTACHMENTS",
+    "toTable": "FUN_EMAIL_IO_MESSAGES",
+    "column": "MESSAGE_ID"
   },
   {
     "fromTable": "FUN_ERP_INTERFACE_DIMENSIONS",
@@ -8990,6 +9085,21 @@
     "column": "PAYMENT_RULE_ID"
   },
   {
+    "fromTable": "IBY_PAYMENT_TRXN_RESPONSES",
+    "toTable": "IBY_BEPINFO",
+    "column": "PAYMENT_SYSTEM_ID"
+  },
+  {
+    "fromTable": "IBY_PAYMENT_TRXN_RESPONSES",
+    "toTable": "IBY_BEPKEYS",
+    "column": "PAYMENT_SYSTEM_ACCOUNT_ID"
+  },
+  {
+    "fromTable": "IBY_PAYMENT_TRXN_RESPONSES",
+    "toTable": "IBY_FORMATS_B",
+    "column": "FORMAT_CODE"
+  },
+  {
     "fromTable": "IBY_PAY_INSTRUCTIONS_ALL",
     "toTable": "IBY_PAY_SERVICE_REQUESTS",
     "column": "PAYMENT_SERVICE_REQUEST_ID"
@@ -11100,6 +11210,11 @@
     "column": "EFFECTIVITY_PERIOD_ID"
   },
   {
+    "fromTable": "VRM_PO_REASSIGNMENT_DETAILS",
+    "toTable": "VRM_CUSTOMER_CONTRACT_HEADERS",
+    "column": "CUSTOMER_CONTRACT_HEADER_ID"
+  },
+  {
     "fromTable": "VRM_PO_ASSET_LIAB_NETTING",
     "toTable": "VRM_CUSTOMER_CONTRACT_HEADERS",
     "column": "CUSTOMER_CONTRACT_HEADER_ID"
@@ -11383,6 +11498,11 @@
     "fromTable": "VRM_PERF_OBLIGATIONS",
     "toTable": "VRM_PRICING_COMBINATIONS",
     "column": "PRICING_COMBINATION_ID"
+  },
+  {
+    "fromTable": "VRM_PO_REASSIGNMENT_DETAILS",
+    "toTable": "VRM_PERF_OBLIGATIONS",
+    "column": "PERF_OBLIGATION_ID"
   },
   {
     "fromTable": "VRM_PO_ASSET_LIAB_NETTING",
