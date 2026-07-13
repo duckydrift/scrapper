@@ -6,13 +6,38 @@ import tempfile
 import time
 from urllib.parse import urljoin
 
-BASE_URL = "https://docs.oracle.com/en/cloud/saas/project-management/26c/oedpp/"
-TOC_URL = "https://docs.oracle.com/en/cloud/saas/project-management/26c/oedpp/toc.htm"
+DOC_ROOT = "https://docs.oracle.com/en/cloud/saas/"
 
-# Separate output so we never clobber / mix into the financials dataset
-# (oracle_data.json) that build_erd_data.py consumes.
-OUTPUT_FILE = "oracle_data_ppm.json"
-RELATIONSHIPS_FILE = "relationships_ppm.json"
+# Oracle Fusion documentation sets, keyed by a short domain name. The value is
+# the path segment under DOC_ROOT (product/version/doc-set); bump the version
+# here when Oracle publishes a new release. Each domain writes to its own files
+# (see out_files) so runs never clobber each other.
+DOMAINS = {
+    "financials": "financials/26c/oedmf",
+    "common":     "applications-common/26c/oedma",
+    "proc":       "procurement/26c/oedmp",
+    "hcm":        "human-resources/oedmh",
+    "ppm":        "project-management/26c/oedpp",
+}
+
+# Optional table-name prefix filter per domain. applications-common is huge and
+# spans many products; the FuiSQL extension only needs the FND_* foundation
+# objects, so we scrape only those for "common".
+DOMAIN_FILTERS = {
+    "common": "FND",
+}
+
+
+def domain_base_url(domain):
+    return DOC_ROOT + DOMAINS[domain].rstrip("/") + "/"
+
+
+def out_files(domain):
+    """(data_file, relationships_file) for a domain. `financials` keeps the
+    historical unsuffixed names that build_erd_data.py defaults to."""
+    if domain == "financials":
+        return "oracle_data.json", "relationships.json"
+    return f"oracle_data_{domain}.json", f"relationships_{domain}.json"
 
 
 def atomic_write_json(path, obj):
@@ -198,12 +223,14 @@ def get_description(soup):
     return ""
 
 
-def scrape_oracle_docs():
-    print(f"Starting scrape of {TOC_URL}")
-    base = TOC_URL.rsplit('/', 1)[0] + '/'
-    print(f"Using Base URL: {base}")
+def scrape_oracle_docs(base_url, output_file, rel_file, name_prefix=None):
+    base = base_url if base_url.endswith('/') else base_url + '/'
+    toc_url = base + 'toc.htm'
+    prefix = name_prefix.upper() if name_prefix else None
+    print(f"Starting scrape of {toc_url}")
+    print(f"Using Base URL: {base}" + (f"  (filter: names starting with {prefix})" if prefix else ""))
 
-    soup = get_soup(TOC_URL)
+    soup = get_soup(toc_url)
     if not soup:
         return
 
@@ -213,25 +240,38 @@ def scrape_oracle_docs():
         if 'index.html' in href or 'get-help' in href or 'toc.htm' in href:
             continue
         full_url = urljoin(base, href).split('#')[0]
-        if full_url.startswith(base) and full_url != base and full_url not in links_to_visit:
-            links_to_visit.append(full_url)
+        if not full_url.startswith(base) or full_url == base or full_url in links_to_visit:
+            continue
+        # Optimization: the page slug is the table name lower-cased with
+        # separators removed (FND_ATTACHED_DOCUMENTS -> fndattacheddocuments-…),
+        # so we can skip non-matching pages without fetching them.
+        if prefix and not full_url.rsplit('/', 1)[-1].lower().startswith(prefix.lower()):
+            continue
+        links_to_visit.append(full_url)
 
     print(f"Found {len(links_to_visit)} pages to scrape.")
 
     # Resume: load any existing valid output and skip URLs already scraped.
     data = {}
     done_urls = set()
-    if os.path.exists(OUTPUT_FILE):
+    if os.path.exists(output_file):
         try:
-            with open(OUTPUT_FILE) as f:
+            with open(output_file) as f:
                 data = json.load(f)
-            done_urls = {v["_sourceUrl"] for v in data.values()
-                         if isinstance(v, dict) and v.get("_sourceUrl")}
-            print(f"Resuming: {len(data)} tables already scraped, skipping {len(done_urls)} URLs.")
+            print(f"Resuming: {len(data)} tables already in {output_file}.")
         except Exception as e:
-            print(f"Existing {OUTPUT_FILE} unreadable ({e}); starting fresh.")
+            print(f"Existing {output_file} unreadable ({e}); starting fresh.")
             data = {}
-            done_urls = set()
+
+    # When a prefix is active, drop any previously-scraped rows that don't match
+    # (e.g. an older unfiltered run), so the output stays prefix-only.
+    if prefix:
+        kept = {k: v for k, v in data.items() if k.startswith(prefix)}
+        if len(kept) != len(data):
+            print(f"  Filtered existing data to {len(kept)} {prefix}* tables (was {len(data)}).")
+        data = kept
+    done_urls = {v["_sourceUrl"] for v in data.values()
+                 if isinstance(v, dict) and v.get("_sourceUrl")}
 
     for i, url in enumerate(links_to_visit):
         if url in done_urls:
@@ -243,6 +283,8 @@ def scrape_oracle_docs():
 
         table_name = get_table_name(page)
         if not table_name:
+            continue
+        if prefix and not table_name.startswith(prefix):
             continue
 
         columns = parse_columns(page)
@@ -265,9 +307,9 @@ def scrape_oracle_docs():
 
         # Atomic, periodic save — resumable and immune to mid-write corruption.
         if len(data) % 20 == 0:
-            atomic_write_json(OUTPUT_FILE, data)
+            atomic_write_json(output_file, data)
 
-    atomic_write_json(OUTPUT_FILE, data)
+    atomic_write_json(output_file, data)
 
     # Dedupe and emit the flat relationship/edge list, derived from all scraped
     # tables (works correctly across resumes), keeping only intra-set edges.
@@ -279,11 +321,60 @@ def scrape_oracle_docs():
             if key not in seen and r["fromTable"] in data and r["toTable"] in data:
                 seen.add(key)
                 edges.append(r)
-    atomic_write_json(RELATIONSHIPS_FILE, edges)
+    atomic_write_json(rel_file, edges)
 
-    print(f"\nScraping complete. {len(data)} tables -> {OUTPUT_FILE}")
-    print(f"{len(edges)} unique relationships -> {RELATIONSHIPS_FILE}")
+    print(f"\nScraping complete. {len(data)} tables -> {output_file}")
+    print(f"{len(edges)} unique relationships -> {rel_file}")
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="Scrape Oracle Fusion table/view docs into a JSON data dictionary.",
+        epilog="Examples:\n"
+               "  python scraper.py financials\n"
+               "  python scraper.py all\n"
+               "  python scraper.py --base-url https://docs.oracle.com/.../oedmX/ --out oracle_data_x.json",
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("domain", nargs="?",
+                        help="Domain to scrape: " + ", ".join(DOMAINS) + ", or 'all'.")
+    parser.add_argument("--base-url", help="Ad-hoc doc-set base URL for a domain not in DOMAINS.")
+    parser.add_argument("--out", help="Output data file for --base-url (default oracle_data_custom.json).")
+    parser.add_argument("--prefix", help="Only keep tables/views whose name starts with this "
+                                         "(overrides a domain's default filter; use '' to disable).")
+    parser.add_argument("--list", action="store_true", help="List known domains and exit.")
+    args = parser.parse_args()
+
+    if args.list:
+        for k in DOMAINS:
+            filt = DOMAIN_FILTERS.get(k)
+            print(f"  {k:12} {domain_base_url(k)}" + (f"  [{filt}* only]" if filt else ""))
+        return
+
+    if args.base_url:
+        data_file = args.out or "oracle_data_custom.json"
+        rel = (data_file.replace("oracle_data", "relationships")
+               if "oracle_data" in data_file else "relationships_custom.json")
+        scrape_oracle_docs(args.base_url, data_file, rel, name_prefix=args.prefix or None)
+        return
+
+    if args.domain == "all":
+        targets = list(DOMAINS)
+    elif args.domain in DOMAINS:
+        targets = [args.domain]
+    else:
+        parser.error("Specify a domain (" + ", ".join(DOMAINS) + "), 'all', or --base-url. "
+                     "Use --list to see domains.")
+
+    # --prefix overrides the domain default; '' explicitly disables it.
+    override = None if args.prefix is None else (args.prefix or None)
+    for domain in targets:
+        data_file, rel_file = out_files(domain)
+        prefix = override if args.prefix is not None else DOMAIN_FILTERS.get(domain)
+        print(f"\n{'=' * 70}\nDomain: {domain}  ->  {data_file}"
+              + (f"  ({prefix}* only)" if prefix else "") + f"\n{'=' * 70}")
+        scrape_oracle_docs(domain_base_url(domain), data_file, rel_file, name_prefix=prefix)
 
 
 if __name__ == "__main__":
-    scrape_oracle_docs()
+    main()
